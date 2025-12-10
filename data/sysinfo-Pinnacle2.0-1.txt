@@ -1,0 +1,2423 @@
+page generated on Mon Nov 10 11:33:26 PST 2025
+Vendor: LINKSYS
+
+UpTime:
+ 11:33:26 up 4 min,  load average: 3.70, 2.32, 1.00
+
+fw_version=1.0.10
+build_version=25111009
+build_date=Mon Nov 10 17:41:31 UTC 2025
+sdk_ver=spf12.5_csu1
+modelNumber=M60-US
+
+Firmware Version: 1.0.10.25111009
+LinksysNow Gui Version: 1.2.7.700380
+Firmware Builddate: Mon Nov 10 17:41:31 UTC 2025
+Product type: release
+Linux: Linux version 5.4.213 (openwrt@ip-10-0-0-234.us-west-2.compute.internal) (gcc version 12.3.0 (OpenWrt GCC 12.3.0 r0+24213-a132865f62cc)) #0 SMP PREEMPT Mon Nov 10 17:33:15 2025
+
+-----U-Boot Data-----
+fw_printenv bootdelay: bootdelay=3
+fw_printenv bootcmd: bootcmd=bootipq
+fw_printenv boot_part: boot_part=2
+fw_printenv auto_recovery: auto_recovery=yes
+All fw_printenv:
+altkern=c300000
+auto_recovery=yes
+baudrate=115200
+boot_part=2
+boot_part_ready=3
+boot_ver=11.7.32
+bootargs=console=ttyMSM0,115200n8 cnss2.enable_mlo_support=1
+bootcmd=bootipq
+bootdelay=3
+config_name=config-1
+dload_dis=1
+ethact=eth0
+ethaddr=00:03:7f:ba:db:ad
+fdt_high=0x48500000
+fdtcontroladdr=4a514004
+flash_type=11
+flashimg=tftp $loadaddr $image && nand erase $prikern $imgsize && nand write $loadaddr $prikern $filesize
+flashimg2=tftp $loadaddr $image && nand erase $altkern $imgsize && nand write $loadaddr $altkern $filesize
+image=SPNM60.img
+imgsize=5200000
+ipaddr=192.168.1.1
+kernsize=800000
+loadaddr=50000000
+machid=8060102
+netmask=255.255.255.0
+prikern=2100000
+serverip=192.168.1.254
+soc_hw_version=201a0101
+soc_version_major=1
+soc_version_minor=1
+stderr=serial@78AF000
+stdin=serial@78AF000
+stdout=serial@78AF000
+
+cat /proc/cmdline: console=ttyMSM0,115200n8 cnss2.enable_mlo_support=1 ubi.mtd=rootfs root=mtd:ubi_rootfs rootfstype=squashfs rootwait clk_ignore_unused vmalloc=1G
+
+cat /proc/mtd: dev:    size   erasesize  name
+mtd0: 00180000 00020000 "0:SBL1"
+mtd1: 00180000 00020000 "0:SBL1_1"
+mtd2: 00100000 00020000 "0:MIBIB"
+mtd3: 00100000 00020000 "0:BOOTCONFIG"
+mtd4: 00100000 00020000 "0:BOOTCONFIG1"
+mtd5: 00380000 00020000 "0:QSEE"
+mtd6: 00380000 00020000 "0:QSEE_1"
+mtd7: 00100000 00020000 "0:DEVCFG"
+mtd8: 00100000 00020000 "0:DEVCFG_1"
+mtd9: 00100000 00020000 "0:TME"
+mtd10: 00100000 00020000 "0:TME_1"
+mtd11: 00100000 00020000 "0:CDT"
+mtd12: 00100000 00020000 "0:CDT_1"
+mtd13: 00100000 00020000 "0:APPSBLENV"
+mtd14: 00280000 00020000 "0:APPSBL"
+mtd15: 00280000 00020000 "0:APPSBL_1"
+mtd16: 00100000 00020000 "0:ETHPHYFW"
+mtd17: 00100000 00020000 "0:TRAINING"
+mtd18: 00200000 00020000 "0:ART"
+mtd19: 00100000 00020000 "0:LICENSE"
+mtd20: 00100000 00020000 "u_env"
+mtd21: 00100000 00020000 "s_env"
+mtd22: 00100000 00020000 "devinfo"
+mtd23: 0a200000 00020000 "rootfs_1"
+mtd24: 0a200000 00020000 "rootfs"
+mtd25: 00200000 00020000 "sysdiag"
+mtd26: 09880000 00020000 "syscfg"
+mtd27: 005a8000 0001f000 "wifi_fw"
+mtd28: 0036cffc 0001f000 "kernel"
+mtd29: 01c18000 0001f000 "ubi_rootfs"
+mtd30: 06482000 0001f000 "rootfs_data"
+mtd31: 08990000 0001f000 "syscfg"
+
+cat /sys/bus/qfprom/devices/qfprom0/authenticate: 0
+
+----EPROM/devinfo Manufacturer Data-----
+modelNumber:M60-US
+modelDescription:Linksys PINNACLE 2.0
+hardware version:XA
+hw_revision:1
+hw_mac_addr:74:12:13:21:53:88
+manufacturer date:2025/03/24
+SN:67A10M23F00003
+UUID:DB614F28-3BB5-48A2-9F65-741213215388
+WPS PIN:41789889
+mfg_data_version:1
+cert_region:US
+manufacturerURL:http://www.linksys.com
+manufacturer:Linksys
+deviceType:urn:home-linksys-com:device:Router:1
+default_ssid:Linksys00003
+hardware color WH
+Devinfo version 20250326.1.5
+
+========================== Wi-Fi General Information ==========================
+Country code                  : ath0	get_countrycode:840
+Device Serial Number          : 67A10M23F00003
+Primary 2.4GHz enabled        : 1
+5GHz enabled          : 1
+6GHz enabled          : 0
+Guest Master Switch enabled   : 0
+Guest 2.4GHz enabled          : 1
+Guest 5GHz enabled            : 1
+Guest 6GHz enabled            : 
+SimpleTap enabled             : 
+Wi-Fi scheduler enabled       : 
+
+----- MAC address (from ifconfig) -----
+LAN Mac Address            : 52:C8:7D:54:77:27
+WAN Mac Address            : 74:12:13:21:53:88
+Primary Mac Address 2.4GHz    : 74:12:13:21:53:89
+Primary Mac Address 5GHz    : 74:12:13:21:53:8A
+Smart Connect ConfigVAP  :7A:12:13:21:53:89
+
+------------- ath0 Settings -------------
+Interface name: ath0
+SSID: Linksys00003
+Mac address: 74:12:13:21:53:89
+Frequency:2.442GHz
+Banwidth (0=HT 20HMz,1=40HMz,2=80HMz,3=80_80/160MHz): ath0	get_chwidth:0
+Network Mode: ath0	get_mode:11GEHT20
+Enables/disables the short gating interval: Current ath0	get_shortgi:1
+Enables/disables ant_ps_on(0=Green AP disabled, 1=NO STA mode, 2=NUM STREAM mode): Current ath0	get_ant_ps_on:0
+Current connected client(s): ADDR               AID CHAN TXRATE RXRATE RSSI MINRSSI MAXRSSI IDLE  TXSEQ  RXSEQ  CAPS XCAPS ACAPS     ERP    STATE MAXRATE(DOT11) HTCAPS   VHTCAPS ASSOCTIME    IEs   MODE RXNSS TXNSS                   PSMODE
+WMM mode (0=AC_BE, 1=AC_BK, 2=AC_VI, 3=AC_VO): ath0	get_wmm:1
+SSID broacast (0=show and respond to probe requests, 1=hide and do not respond to probe requests) ath0	get_hide_ssid:0
+Beacon interval (20-1000: interval in time units 1=1.024ms): ath0	get_bintval:100
+Power save DTIM (1-255): ath0	get_dtim_period:1
+11g protection (0=protection off, 1=protection auto): ath0	get_protmode:1
+WDS mode (0=disable, 1=enable ): ath0	get_wds:1
+HT20/40 Coex: ath0	g_disablecoext:0
+HT40 intolerance: ath0	get_ht40intol:0
+------------- ath10 Settings -------------
+Interface name: ath10
+SSID: Linksys00003
+Mac address: 74:12:13:21:53:8A
+Frequency:5.765GHz
+Banwidth (0=HT 20HMz,1=40HMz,2=80HMz,3=80_80/160MHz): ath10	get_chwidth:2
+Network Mode: ath10	get_mode:11AEHT80
+Enables/disables the short gating interval: Current ath10	get_shortgi:1
+Enables/disables ant_ps_on(0=Green AP disabled, 1=NO STA mode, 2=NUM STREAM mode): Current ath10	get_ant_ps_on:0
+Current connected client(s): ADDR               AID CHAN TXRATE RXRATE RSSI MINRSSI MAXRSSI IDLE  TXSEQ  RXSEQ  CAPS XCAPS ACAPS     ERP    STATE MAXRATE(DOT11) HTCAPS   VHTCAPS ASSOCTIME    IEs   MODE RXNSS TXNSS                   PSMODE
+7a:12:13:21:53:84    1  153 1080M   1297M  -27     -30     -14    0      0   65535  EPsR  ETWt NULL    0          b        1441200           AWPSM           gGTRs 00:03:04     RSN WME IEEE80211_MODE_11BEA_EHT80  2 2   0  
+      
+ RSSI is combined over chains in dBm
+ Minimum Tx Power		: 0
+ Maximum Tx Power		: 69
+ HT Capability			: Yes
+ VHT Capability			: Yes
+ MU capable			: No
+ SNR				: 69
+ Operating band			: 5GHz
+ Current Operating class	: 128
+ Supported Operating classes	: 115  116  117  124  125  126  127  128  130 
+ Supported Rates(Mbps)		: 6  9  12  18  24  36  48  54 
+ Max STA phymode		: IEEE80211_MODE_11BEA_EHT80 
+ MLO				: No 
+
+ce:ef:ac:75:44:5a    2  153 866M    866M  -28     -34     -24    0      0   65535    EP  NULL NULL    0          b         866700            AWPS             gGT 00:02:23     RSN WME IEEE80211_MODE_11AC_VHT80  3 3   1  
+      
+ RSSI is combined over chains in dBm
+ Minimum Tx Power		: 249
+ Maximum Tx Power		: 20
+ HT Capability			: Yes
+ VHT Capability			: Yes
+ MU capable			: No
+ SNR				: 68
+ Operating band			: 5GHz
+ Current Operating class	: 0
+ Supported Rates(Mbps)		: 6  9  12  18  24  36  48  54 
+ Max STA phymode		: IEEE80211_MODE_11AC_VHT80 
+ MLO				: No 
+
+26:8a:67:c4:5c:c7    3  153 648M   1201M  -42     -42     -33    0      0   65535  EPSs    BO NULL    0          b        1441200           AWPSM             gGs 00:00:07     RSN WME IEEE80211_MODE_11BEA_EHT80  2 2   0  
+      NR BRT 
+ RSSI is combined over chains in dBm
+ Minimum Tx Power		: 0
+ Maximum Tx Power		: 25
+ HT Capability			: Yes
+ VHT Capability			: Yes
+ MU capable			: Yes
+ SNR				: 54
+ Operating band			: 5GHz
+ Current Operating class	: 124
+ Supported Operating classes	: 81  82  83  84  115  116  117  118  119  120  121  122  123  124  125  126  127  128  129  131  132  133  134  136 
+ Supported Rates(Mbps)		: 6  9  12  18  24  36  48  54 
+ Max STA phymode		: IEEE80211_MODE_11BEA_EHT80 
+ MLO				: No 
+WMM mode (0=AC_BE, 1=AC_BK, 2=AC_VI, 3=AC_VO): ath10	get_wmm:1
+SSID broacast (0=show and respond to probe requests, 1=hide and do not respond to probe requests) ath10	get_hide_ssid:0
+Beacon interval (20-1000: interval in time units 1=1.024ms): ath10	get_bintval:100
+Power save DTIM (1-255): ath10	get_dtim_period:1
+11g protection (0=protection off, 1=protection auto): ath10	get_protmode:1
+WDS mode (0=disable, 1=enable ): ath10	get_wds:1
+HT20/40 Coex: ath10	g_disablecoext:1
+HT40 intolerance: ath10	get_ht40intol:0
+------------- MLO section -------------
+MLO AP addr: 74:12:13:21:53:8c
+MLO STA addr: 74:12:13:21:53:8d
+------------- MAC filter section -------------
+wireless access restriction: disabled
+------------- Wi-Fi uci section -------------
+linksys.wireless.5GHz_40MHZ='0'
+linksys.wireless.agent_bss_configured='0'
+linksys.wireless.atf_enable='0'
+linksys.wireless.atf_supported='0'
+linksys.wireless.ath0_syscfg_index='wl0'
+linksys.wireless.ath10_syscfg_index='wl1'
+linksys.wireless.band_steering_configured='0'
+linksys.wireless.band_steering_enabled='1'
+linksys.wireless.band_steering_int='ath10'
+linksys.wireless.band_steering_mode='1'
+linksys.wireless.band_steering_supported_modes='1' '2'
+linksys.wireless.configurable_wl_ifs='wl0' 'wl1'
+linksys.wireless.country='US'
+linksys.wireless.debug='0'
+linksys.wireless.dfs_enable='0'
+linksys.wireless.dfs_supported='1'
+linksys.wireless.guest_auth_port='10080'
+linksys.wireless.guest_dhcp_lease_time='1h'
+linksys.wireless.guest_dhcp_num='100'
+linksys.wireless.guest_dhcp_number='100'
+linksys.wireless.guest_dhcp_start='100'
+linksys.wireless.guest_enabled='0'
+linksys.wireless.guest_lan_ifname='br-guest'
+linksys.wireless.guest_lan_ipaddr='192.168.3.1'
+linksys.wireless.guest_lan_netmask='255.255.255.0'
+linksys.wireless.guest_logging='1'
+linksys.wireless.guest_mac='00:00:00:00:00:00'
+linksys.wireless.guest_max_allowed='5'
+linksys.wireless.guest_max_allowed_limit='50'
+linksys.wireless.guest_max_duration='24'
+linksys.wireless.guest_redirector='51000'
+linksys.wireless.guest_secured='1'
+linksys.wireless.guest_ssid='Linksys00003-guest'
+linksys.wireless.guest_ssid_broadcast='1'
+linksys.wireless.guest_ssid_suffix='-guest'
+linksys.wireless.guest_subnet='192.168.3.0'
+linksys.wireless.guest_vlan_id='3'
+linksys.wireless.guest_wifi_phy_ifname='wl0'
+linksys.wireless.hostapd_debug='0'
+linksys.wireless.lan_wl_physical_ifnames='ath0' 'ath10'
+linksys.wireless.lan_wl_virtual_ifnames='ath0' 'ath1' 'ath2' 'ath5' 'ath6' 'ath10' 'ath11' 'ath12'
+linksys.wireless.master_AP_threshold='-60'
+linksys.wireless.master_support_bands='wl0' 'wl1'
+linksys.wireless.mlo_enable='0'
+linksys.wireless.mlo_supported='1'
+linksys.wireless.multiregion_enable='0'
+linksys.wireless.multiregion_support='1'
+linksys.wireless.nss_support='1'
+linksys.wireless.privacy_button_prev_state='disabled'
+linksys.wireless.sae_groups='19'
+linksys.wireless.sae_pwe='2'
+linksys.wireless.setup_enabled='0'
+linksys.wireless.setup_vap_dhcp_leasetime='1h'
+linksys.wireless.setup_vap_dhcp_num='100'
+linksys.wireless.setup_vap_dhcp_start='100'
+linksys.wireless.setup_vap_enabled='1'
+linksys.wireless.setup_vap_ipaddr='192.168.20.1'
+linksys.wireless.setup_vap_netmask='255.255.255.0'
+linksys.wireless.setup_vap_subnet='192.168.20.0'
+linksys.wireless.svap_lan_ifname='br-setup'
+linksys.wireless.svap_vlan_id='4'
+linksys.wireless.unii4_support='0'
+linksys.wireless.wl0_amsdu_enabled='7'
+linksys.wireless.wl0_ap_isolation='disabled'
+linksys.wireless.wl0_authentication_type='auto'
+linksys.wireless.wl0_available_channels='1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
+linksys.wireless.wl0_available_channels_0='0' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
+linksys.wireless.wl0_available_channels_20='0' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
+linksys.wireless.wl0_basic_rate='default'
+linksys.wireless.wl0_beacon_interval='100'
+linksys.wireless.wl0_brcm_iot_enabled='1'
+linksys.wireless.wl0_bsta='ath4'
+linksys.wireless.wl0_channel='0'
+linksys.wireless.wl0_chip='11be'
+linksys.wireless.wl0_configured_vap='ath7'
+linksys.wireless.wl0_cts_protection_mode='auto'
+linksys.wireless.wl0_default_mixed_mode='mixed'
+linksys.wireless.wl0_default_ssid='Linksys00003'
+linksys.wireless.wl0_dfs_enabled='1'
+linksys.wireless.wl0_dtim_interval='1'
+linksys.wireless.wl0_encryption='aes'
+linksys.wireless.wl0_fragmentation_threshold='2346'
+linksys.wireless.wl0_frame_burst='enabled'
+linksys.wireless.wl0_grn_field_pre='disabled'
+linksys.wireless.wl0_guest_enabled='1'
+linksys.wireless.wl0_guest_vap='ath2'
+linksys.wireless.wl0_ht_dup_mcs32='enabled'
+linksys.wireless.wl0_key_renewal='3600'
+linksys.wireless.wl0_mumimo_enabled='0'
+linksys.wireless.wl0_n_transmission_rate='auto'
+linksys.wireless.wl0_network_mode='mixed'
+linksys.wireless.wl0_network_modes='11bg' '11bgn' '11bgnax' 'mixed'
+linksys.wireless.wl0_owe_vap='ath5'
+linksys.wireless.wl0_physical_ifname='ath0'
+linksys.wireless.wl0_pmf='disabled'
+linksys.wireless.wl0_radio_band='auto'
+linksys.wireless.wl0_rts_threshold='2347'
+linksys.wireless.wl0_security_mode='wpa3-personal'
+linksys.wireless.wl0_setup_vap='ath6'
+linksys.wireless.wl0_sideband='auto'
+linksys.wireless.wl0_ssid='Linksys00003'
+linksys.wireless.wl0_ssid_broadcast='1'
+linksys.wireless.wl0_state='up'
+linksys.wireless.wl0_stbc='disabled'
+linksys.wireless.wl0_supported_channel_widths='0' '20'
+linksys.wireless.wl0_supported_sec_types='disabled' 'wpa2-personal' 'wpa3-personal' 'wpa3-mixed' 'wpa3-open' 'wpa3-owe'
+linksys.wireless.wl0_transmission_power='high'
+linksys.wireless.wl0_transmission_rate='auto'
+linksys.wireless.wl0_txbf_3x3_only='0'
+linksys.wireless.wl0_txbf_enabled='1'
+linksys.wireless.wl0_txpower='-'
+linksys.wireless.wl0_user_vap='ath0'
+linksys.wireless.wl0_wmm_ps='enabled'
+linksys.wireless.wl0_wps_state='configured'
+linksys.wireless.wl0_xconnect_vap='ath8'
+linksys.wireless.wl1_amsdu_enabled='7'
+linksys.wireless.wl1_ap_isolation='disabled'
+linksys.wireless.wl1_authentication_type='auto'
+linksys.wireless.wl1_available_channels='36' '40' '44' '48' '149' '153' '157' '161' '165'
+linksys.wireless.wl1_available_channels_0='0' '36' '40' '44' '48' '149' '153' '157' '161' '165'
+linksys.wireless.wl1_available_channels_20='0' '36' '40' '44' '48' '149' '153' '157' '161' '165'
+linksys.wireless.wl1_available_channels_40='0' '36' '40' '44' '48' '149' '153' '157' '161'
+linksys.wireless.wl1_basic_rate='default'
+linksys.wireless.wl1_beacon_interval='100'
+linksys.wireless.wl1_bsta='ath14'
+linksys.wireless.wl1_channel='0'
+linksys.wireless.wl1_chip='11be'
+linksys.wireless.wl1_cts_protection_mode='auto'
+linksys.wireless.wl1_default_mixed_mode='mixed'
+linksys.wireless.wl1_default_ssid='Linksys00003'
+linksys.wireless.wl1_dfs_enabled='0'
+linksys.wireless.wl1_dtim_interval='1'
+linksys.wireless.wl1_encryption='aes'
+linksys.wireless.wl1_fragmentation_threshold='2346'
+linksys.wireless.wl1_frame_burst='enabled'
+linksys.wireless.wl1_grn_field_pre='disabled'
+linksys.wireless.wl1_guest_enabled='1'
+linksys.wireless.wl1_guest_ssid='Linksys00003-guest'
+linksys.wireless.wl1_guest_ssid_broadcast='1'
+linksys.wireless.wl1_guest_vap='ath12'
+linksys.wireless.wl1_guest_wifi_phy_ifname='wl1'
+linksys.wireless.wl1_ht_dup_mcs32='enabled'
+linksys.wireless.wl1_key_renewal='3600'
+linksys.wireless.wl1_mumimo_enabled='1'
+linksys.wireless.wl1_n_transmission_rate='auto'
+linksys.wireless.wl1_network_mode='mixed'
+linksys.wireless.wl1_network_modes='11a' '11an' '11anac' '11anacax' 'mixed'
+linksys.wireless.wl1_owe_vap='ath15'
+linksys.wireless.wl1_physical_ifname='ath10'
+linksys.wireless.wl1_pmf='disabled'
+linksys.wireless.wl1_radio_band='auto'
+linksys.wireless.wl1_rts_threshold='2347'
+linksys.wireless.wl1_security_mode='wpa3-personal'
+linksys.wireless.wl1_sideband='lower'
+linksys.wireless.wl1_ssid='Linksys00003'
+linksys.wireless.wl1_ssid_broadcast='1'
+linksys.wireless.wl1_state='up'
+linksys.wireless.wl1_stbc='disabled'
+linksys.wireless.wl1_supported_channel_widths='0' '20' '40'
+linksys.wireless.wl1_supported_sec_types='disabled' 'wpa2-personal' 'wpa3-personal' 'wpa3-mixed' 'wpa3-open' 'wpa3-owe'
+linksys.wireless.wl1_transmission_power='high'
+linksys.wireless.wl1_transmission_rate='auto'
+linksys.wireless.wl1_txbf_3x3_only='0'
+linksys.wireless.wl1_txbf_enabled='1'
+linksys.wireless.wl1_txpower='-'
+linksys.wireless.wl1_user_vap='ath10'
+linksys.wireless.wl1_wmm_ps='enabled'
+linksys.wireless.wl1_wps_state='configured'
+linksys.wireless.wl2_bsta='ath24'
+linksys.wireless.wl2_dfs_enabled='0'
+linksys.wireless.wl2_encryption='tkip+aes'
+linksys.wireless.wl2_guest_vap='ath22'
+linksys.wireless.wl2_guest_wifi_phy_ifname='wl2'
+linksys.wireless.wl2_owe_vap='ath25'
+linksys.wireless.wl2_radio_band='auto'
+linksys.wireless.wl2_security_mode='wpa3-personal'
+linksys.wireless.wl2_ssid='Linksys00003'
+linksys.wireless.wl2_ssid_broadcast='1'
+linksys.wireless.wl2_state='up'
+linksys.wireless.wl2_user_vap='ath20'
+linksys.wireless.wl3_bsta='ath34'
+linksys.wireless.wl3_default_ssid='Linksys00003'
+linksys.wireless.wl3_guest_ssid='Linksys00003-guest'
+linksys.wireless.wl3_guest_vap='ath32'
+linksys.wireless.wl3_guest_wifi_phy_ifname='wl3'
+linksys.wireless.wl3_owe_vap='ath35'
+linksys.wireless.wl3_radio_band='auto'
+linksys.wireless.wl3_security_mode='wpa3-personal'
+linksys.wireless.wl3_ssid='Linksys00003'
+linksys.wireless.wl3_user_vap='ath30'
+linksys.wireless.wl_access_restriction='disabled'
+linksys.wireless.wl_default_ssid='Linksys00003'
+linksys.wireless.wl_mac_filter='00:00:00:00:00:00' '7e:12:13:21:53:84' '7a:12:13:21:53:84' '82:12:13:21:53:83' '7e:12:13:21:53:83' '74:12:13:21:53:86' '74:12:13:21:53:87'
+linksys.wireless.wl_mcastenhance_support='enabled'
+linksys.wireless.wl_no_acknowledgement='disabled'
+linksys.wireless.wl_wmm_support='enabled'
+linksys.wireless.wpa_debug='0'
+linksys.wireless.wpa_timeout='864000'
+linksys.wireless.wps_user_setting='0'
+linksys.wireless.xconnect_vap_enabled='0'
+linksys.wireless=linksys
+linksys.wifi_bridge.mode='0'
+linksys.wifi_bridge.radio='wl0'
+linksys.wifi_bridge.wl0_supported_sec_types='disabled' 'wpa2-personal' 'wpa3-personal' 'wpa3-mixed'
+linksys.wifi_bridge.wl1_supported_sec_types='disabled' 'wpa2-personal' 'wpa3-personal' 'wpa3-mixed'
+linksys.wifi_bridge=linksys
+
+linksys.wireless.wl_access_restriction='disabled'
+linksys.wireless.wl_mac_filter='00:00:00:00:00:00' '7e:12:13:21:53:84' '7a:12:13:21:53:84' '82:12:13:21:53:83' '7e:12:13:21:53:83' '74:12:13:21:53:86' '74:12:13:21:53:87'
+------------- Smart Connect section -------------
+Smart Connect ConfigVAP  : ath7      IEEE 802.11beg  ESSID:"UojIGtvsjwnpoe3U7X42aQiMIbNEDQzx"  
+          Mode:Master  Frequency:2.442 GHz  Access Point: 7A:12:13:21:53:89   
+          Bit Rate:344.2 Mb/s   Tx-Power:28 dBm   
+          RTS thr:off   Fragment thr:off
+          Encryption key:3DC5-0BFA-4401-2F0F-4B56-2851-B45F-21AD   Security mode:restricted
+          Power Management:off
+          Link Quality=0/94  Signal level=-90 dBm  Noise level=-90 dBm (BDF averaged NF value in dBm)
+          Rx invalid nwid:116  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+------------- Smart Connect uci section -------------
+linksys.smart_connect.br_dev='br-lan'
+linksys.smart_connect.client_enabled='0'
+linksys.smart_connect.configured_vap_security_mode='wpa2-personal'
+linksys.smart_connect.configured_vap_ssid='UojIGtvsjwnpoe3U7X42aQiMIbNEDQzx'
+linksys.smart_connect.configured_vap_ssid_broadcast='0'
+linksys.smart_connect.server_enabled='1'
+linksys.smart_connect.serverip='192.168.20.1'
+linksys.smart_connect.setup_duration='120'
+linksys.smart_connect.setup_vap_ssid='Linksys00003-SCS'
+linksys.smart_connect.wl0_configured_vap='ath7'
+linksys.smart_connect.wl0_enabled='1'
+linksys.smart_connect.wl0_setup_vap='ath6'
+linksys.smart_connect.wl1_enabled='0'
+linksys.smart_connect=linksys
+linksys.smart_mode.ML='0'
+linksys.smart_mode.mode='2'
+linksys.smart_mode.timeout='120'
+linksys.smart_mode=linksys
+------------- wifi apstats section -------------
+radio level information of 2.4G:
+Radio Level Stats: wifi0
+Tx Data Packets                 = 607
+Tx Data Bytes                   = 111853
+Rx Data Packets                 = 145
+Rx Data Bytes                   = 31454
+Tx Unicast Data Packets         = 383
+Tx Multi/Broadcast Data Packets = 224
+Tx Data Packets per AC:
+ Best effort                    = 377
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 6
+Rx Data Packets per AC:
+ Best effort                    = 142
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 3
+Channel Utilization (0-255)     = <DISABLED>
+Tx Beacon Frames                = 4432
+Tx Mgmt Frames                  = 50
+Rx Mgmt Frames                  = 8
+Rx Mgmt Frames dropped(RSSI too low) = 0
+Tx Ctl Frames                   = 0
+Rx Ctl Frames                   = 0
+Rx RSSI                         = 0
+Rx PHY errors                   = 42
+Rx CRC errors                   = 0
+Rx MIC errors                   = 0
+Rx Decryption errors            = 0
+Rx PN errors                    = 0
+Rx errors                       = 0
+Tx failures                     = 0
+Tx Dropped                      = 4
+Connections refuse Radio limit  = 0
+Connections refuse Vap limit    = 0
+802.11 Auth Attempts            = 1
+802.11 Auth Success             = 1
+MLME Authorize Attempts         = 1
+MLME Authorize Success          = 1
+Self BSS chan util              = 6
+OBSS chan util                  = 34
+lithium_cycle_counts:
+lithium_cycle_cnt: Chan NF (BDF averaged NF_dBm) = -90
+lithium_cycle_cnt: Tx Frame Cnt = 16024121
+lithium_cycle_cnt: Rx Frame Cnt = 20272997
+lithium_cycle_cnt: Rx Clear Cnt = 86153977
+lithium_cycle_cnt: Cycle Cnt    = 243713779
+lithium_cycle_cnt: Phy Err Cnt  = 42
+lithium_cycle_cnt: Chan Tx Pwr  = 56
+Number of Active Vaps           = 2
+Throughput (kbps)               = <DISABLED>
+PER over configured period (%)  = <DISABLED>
+Total PER (%)                   = 0
+Co-located RNR stats:
+ Created vap:                   = 0
+ Active vap:                    = 0
+ RNR count:                     = 0
+ 6GHz SoC status:               = 0
+
+radio level information of 5G:
+Radio Level Stats: wifi1
+Tx Data Packets                 = 49808
+Tx Data Bytes                   = 3778954
+Rx Data Packets                 = 100517
+Rx Data Bytes                   = 143396034
+Tx Unicast Data Packets         = 47939
+Tx Multi/Broadcast Data Packets = 1869
+Tx Data Packets per AC:
+ Best effort                    = 47879
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 45
+Rx Data Packets per AC:
+ Best effort                    = 100887
+ Background                     = 178
+ Video                          = 0
+ Voice                          = 173
+Channel Utilization (0-255)     = <DISABLED>
+Tx Beacon Frames                = 2140
+Tx Mgmt Frames                  = 175
+Rx Mgmt Frames                  = 41
+Rx Mgmt Frames dropped(RSSI too low) = 0
+Tx Ctl Frames                   = 0
+Rx Ctl Frames                   = 0
+Rx RSSI                         = 48
+Rx PHY errors                   = 0
+Rx CRC errors                   = 0
+Rx MIC errors                   = 0
+Rx Decryption errors            = 0
+Rx PN errors                    = 0
+Rx errors                       = 0
+Tx failures                     = 0
+Tx Dropped                      = 0
+Connections refuse Radio limit  = 0
+Connections refuse Vap limit    = 0
+802.11 Auth Attempts            = 6
+802.11 Auth Success             = 6
+MLME Authorize Attempts         = 3
+MLME Authorize Success          = 3
+Self BSS chan util              = 15
+OBSS chan util                  = 1
+lithium_cycle_counts:
+lithium_cycle_cnt: Chan NF (BDF averaged NF_dBm) = -96
+lithium_cycle_cnt: Tx Frame Cnt = 3504706
+lithium_cycle_cnt: Rx Frame Cnt = 34042344
+lithium_cycle_cnt: Rx Clear Cnt = 45232457
+lithium_cycle_cnt: Cycle Cnt    = 252839121
+lithium_cycle_cnt: Phy Err Cnt  = 0
+lithium_cycle_cnt: Chan Tx Pwr  = 53
+Number of Active Vaps           = 1
+Throughput (kbps)               = <DISABLED>
+PER over configured period (%)  = <DISABLED>
+Total PER (%)                   = 0
+Co-located RNR stats:
+ Created vap:                   = 0
+ Active vap:                    = 0
+ RNR count:                     = 0
+ 6GHz SoC status:               = 0
+
+------------- wlan_report section -------------
+      Client       Stat  Net      Node     MCS  RSSI           When
+-----------------  ----  ----  ----------  ---  ----  -----------------------
+26:8a:67:c4:5c:c7  up    WLAN  master      648M  -41  2025-11-10T19:33:20Z
+7a:12:13:21:53:84  up    WLAN  master      648M  -21  2025-11-10T19:30:23Z
+ce:ef:ac:75:44:5a  up    WLAN  master      520M  -32  2025-11-10T19:31:05Z
+------------- dfs radar detect section -------------
+Radar: detect on 2.4G:
+Radar: detected 0 radars
+Radar: detect on 5G:
+Radar: detected 0 radars
+========================== End Of Wi-Fi General Information ==========================
+WiFi debug info:
+========================== Wi-Fi Development Debug Information ==========================
+2.4G information:
+ath0      IEEE 802.11beg  ESSID:"Linksys00003"  
+          Mode:Master  Frequency:2.442 GHz  Access Point: 74:12:13:21:53:89   
+          Bit Rate:344.2 Mb/s   Tx-Power:28 dBm   
+          RTS thr:off   Fragment thr:off
+          Encryption key:E594-8B64-9C99-59BB-EA41-9813-38B3-4DF5   Security mode:restricted
+          Power Management:off
+          Link Quality=0/94  Signal level=-90 dBm  Noise level=-90 dBm (BDF averaged NF value in dBm)
+          Rx invalid nwid:80  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+5GHz information:
+ath10     IEEE 802.11bea  ESSID:"Linksys00003"  
+          Mode:Master  Frequency:5.765 GHz  Access Point: 74:12:13:21:53:8A   
+          Bit Rate:1.4412 Gb/s   Tx-Power:26 dBm   
+          RTS thr:off   Fragment thr:off
+          Encryption key:7294-C3C4-2B12-DB09-ED7F-E448-44DD-6934   Security mode:restricted
+          Power Management:off
+          Link Quality=0/94  Signal level=-96 dBm  Noise level=-96 dBm (BDF averaged NF value in dBm)
+          Rx invalid nwid:112  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+channel information:
+ath0      11 channels in total; available frequencies :
+          Channel 01 : 2.412 GHz
+          Channel 02 : 2.417 GHz
+          Channel 03 : 2.422 GHz
+          Channel 04 : 2.427 GHz
+          Channel 05 : 2.432 GHz
+          Channel 06 : 2.437 GHz
+          Channel 07 : 2.442 GHz
+          Channel 08 : 2.447 GHz
+          Channel 09 : 2.452 GHz
+          Channel 10 : 2.457 GHz
+          Channel 11 : 2.462 GHz
+          Current Frequency:2.442 GHz (Channel 7)
+
+ath10     9 channels in total; available frequencies :
+          Channel 36 : 5.18 GHz
+          Channel 40 : 5.2 GHz
+          Channel 44 : 5.22 GHz
+          Channel 48 : 5.24 GHz
+          Channel 149 : 5.745 GHz
+          Channel 153 : 5.765 GHz
+          Channel 157 : 5.785 GHz
+          Channel 161 : 5.805 GHz
+          Channel 165 : 5.825 GHz
+          Current Frequency:5.765 GHz (Channel 153)
+
+========================== End Of Wi-Fi Development Debug Information ==========================
+brctl show
+
+bridge name	bridge id		STP enabled	interfaces
+br-lan		7fff.52c87d547727	no		ath0
+							ath10
+							ath10.sta1
+							eth1
+br-setup		7fff.741213215389	no		ath0.4
+							ath10.4
+							ath10.sta1.4
+							ath7
+							eth1.4
+ifconfig:
+
+ath0      Link encap:Ethernet  HWaddr 74:12:13:21:53:89  
+          inet6 addr: fe80::7612:13ff:fe21:5389/64 Scope:Link
+          UP BROADCAST RUNNING ALLMULTI MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+ath0.4    Link encap:Ethernet  HWaddr 74:12:13:21:53:89  
+          inet6 addr: fe80::7612:13ff:fe21:5389/64 Scope:Link
+          UP BROADCAST RUNNING ALLMULTI MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1042 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:172283 (168.2 KiB)
+
+ath10     Link encap:Ethernet  HWaddr 74:12:13:21:53:8A  
+          inet6 addr: fe80::7612:13ff:fe21:538a/64 Scope:Link
+          UP BROADCAST RUNNING ALLMULTI MULTICAST  MTU:1500  Metric:1
+          RX packets:100517 errors:49 dropped:0 overruns:0 frame:0
+          TX packets:49726 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:143396034 (136.7 MiB)  TX bytes:12541424 (11.9 MiB)
+
+ath10.4   Link encap:Ethernet  HWaddr 74:12:13:21:53:8A  
+          inet6 addr: fe80::7612:13ff:fe21:538a/64 Scope:Link
+          UP BROADCAST RUNNING ALLMULTI MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:847 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:141113 (137.8 KiB)
+
+ath10.sta1 Link encap:Ethernet  HWaddr 74:12:13:21:53:8A  
+          inet6 addr: fe80::7612:13ff:fe21:538a/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:93755 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:38127 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:139269497 (132.8 MiB)  TX bytes:3253754 (3.1 MiB)
+
+ath10.sta1.4 Link encap:Ethernet  HWaddr 74:12:13:21:53:8A  
+          inet6 addr: fe80::7612:13ff:fe21:538a/64 Scope:Link
+          UP BROADCAST RUNNING ALLMULTI MULTICAST  MTU:1500  Metric:1
+          RX packets:499 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:167 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:59987 (58.5 KiB)  TX bytes:35506 (34.6 KiB)
+
+ath7      Link encap:Ethernet  HWaddr 7A:12:13:21:53:89  
+          inet6 addr: fe80::7812:13ff:fe21:5389/64 Scope:Link
+          UP BROADCAST RUNNING ALLMULTI MULTICAST  MTU:1500  Metric:1
+          RX packets:145 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:611 errors:0 dropped:4 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:31454 (30.7 KiB)  TX bytes:111702 (109.0 KiB)
+
+br-lan    Link encap:Ethernet  HWaddr 52:C8:7D:54:77:27  
+          inet addr:192.168.1.1  Bcast:192.168.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::50c8:7dff:fe54:7727/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:99730 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:47838 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:141980347 (135.4 MiB)  TX bytes:11110070 (10.5 MiB)
+
+br-setup  Link encap:Ethernet  HWaddr 74:12:13:21:53:89  
+          inet addr:192.168.20.1  Bcast:192.168.20.255  Mask:255.255.255.0
+          inet6 addr: fe80::7612:13ff:fe21:5389/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:642 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:801 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:89077 (86.9 KiB)  TX bytes:151853 (148.2 KiB)
+
+eth0      Link encap:Ethernet  HWaddr 74:12:13:21:53:88  
+          inet addr:10.0.0.21  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::7612:13ff:fe21:5388/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:10575 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:7207 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:8622760 (8.2 MiB)  TX bytes:3729051 (3.5 MiB)
+          Base address:0x4000 
+
+eth1      Link encap:Ethernet  HWaddr 52:C8:7D:54:77:27  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:53 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3405 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:14059 (13.7 KiB)  TX bytes:890639 (869.7 KiB)
+
+eth1.4    Link encap:Ethernet  HWaddr 52:C8:7D:54:77:27  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1034 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:174023 (169.9 KiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:795 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:795 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:113570 (110.9 KiB)  TX bytes:113570 (110.9 KiB)
+
+wifi0     Link encap:UNSPEC  HWaddr 74-12-13-21-53-89-00-00-00-00-00-00-00-00-00-00  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:145 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:611 errors:0 dropped:4 overruns:0 carrier:0
+          collisions:0 txqueuelen:2699 
+          RX bytes:31454 (30.7 KiB)  TX bytes:111702 (109.0 KiB)
+
+wifi1     Link encap:UNSPEC  HWaddr 74-12-13-21-53-8A-00-00-00-00-00-00-00-00-00-00  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:100517 errors:49 dropped:0 overruns:0 frame:0
+          TX packets:49726 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:2699 
+          RX bytes:143396034 (136.7 MiB)  TX bytes:12541424 (11.9 MiB)
+
+cat /etc/resolv.conf:
+
+search lan
+nameserver 127.0.0.1
+nameserver ::1
+
+ip link:
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: bond0: <BROADCAST,MULTICAST,MASTER> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 5a:e7:44:7a:a7:1b brd ff:ff:ff:ff:ff:ff
+3: miireg: <> mtu 0 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/netrom 
+4: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 74:12:13:21:53:88 brd ff:ff:ff:ff:ff:ff
+5: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-lan state UP mode DEFAULT group default qlen 1000
+    link/ether 52:c8:7d:54:77:27 brd ff:ff:ff:ff:ff:ff
+6: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/tunnel6 :: brd ::
+7: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+8: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/gre 0.0.0.0 brd 0.0.0.0
+9: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+10: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+11: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/gre6 :: brd ::
+12: teql0: <NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 100
+    link/void 
+13: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 52:c8:7d:54:77:27 brd ff:ff:ff:ff:ff:ff
+14: br-setup: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 74:12:13:21:53:89 brd ff:ff:ff:ff:ff:ff
+15: eth1.4@eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-setup state UP mode DEFAULT group default qlen 1000
+    link/ether 52:c8:7d:54:77:27 brd ff:ff:ff:ff:ff:ff
+16: mld-wifi0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+17: wifi0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 2699
+    link/ieee802.11 74:12:13:21:53:89 brd ff:ff:ff:ff:ff:ff
+18: soc0: <> mtu 0 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ieee802.11 
+19: wifi1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 2699
+    link/ieee802.11 74:12:13:21:53:8a brd ff:ff:ff:ff:ff:ff
+20: soc1: <> mtu 0 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ieee802.11 
+21: ath0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-lan state UP mode DEFAULT group default 
+    link/ether 74:12:13:21:53:89 brd ff:ff:ff:ff:ff:ff
+22: ath7: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-setup state UP mode DEFAULT group default qlen 1000
+    link/ether 7a:12:13:21:53:89 brd ff:ff:ff:ff:ff:ff
+23: ath0.4@ath0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-setup state UP mode DEFAULT group default qlen 1000
+    link/ether 74:12:13:21:53:89 brd ff:ff:ff:ff:ff:ff
+24: ath10: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-lan state UP mode DEFAULT group default 
+    link/ether 74:12:13:21:53:8a brd ff:ff:ff:ff:ff:ff
+25: ath10.4@ath10: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-setup state UP mode DEFAULT group default qlen 1000
+    link/ether 74:12:13:21:53:8a brd ff:ff:ff:ff:ff:ff
+28: ath10.sta1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-lan state UNKNOWN mode DEFAULT group default 
+    link/ether 74:12:13:21:53:8a brd ff:ff:ff:ff:ff:ff
+29: ath10.sta1.4@ath10.sta1: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-setup state UP mode DEFAULT group default qlen 1000
+    link/ether 74:12:13:21:53:8a brd ff:ff:ff:ff:ff:ff
+
+ip neigh:
+
+192.168.1.130 dev br-lan lladdr 26:8a:67:c4:5c:c7 DELAY 
+192.168.1.223 dev br-lan INCOMPLETE 
+10.0.0.34 dev br-lan FAILED 
+192.168.20.164 dev br-setup lladdr 74:12:13:21:53:83 STALE 
+10.0.0.34 dev eth0 lladdr e4:70:b8:6c:dc:de STALE 
+192.168.1.190 dev br-lan lladdr ce:ef:ac:75:44:5a REACHABLE 
+192.168.1.213 dev br-lan lladdr 74:12:13:21:53:82 REACHABLE 
+192.168.1.254 dev br-lan lladdr 24:f5:a2:f2:06:03 STALE 
+10.0.0.1 dev eth0 lladdr 3c:37:86:c9:b7:c3 REACHABLE 
+192.168.1.1 dev br-setup FAILED 
+fe80::c37:51b5:1fe7:2295 dev br-lan lladdr ce:ef:ac:75:44:5a STALE 
+fe80::a50e:5604:4ccf:347b dev br-lan lladdr 24:f5:a2:f2:06:03 STALE 
+fe80::7612:13ff:fe21:5388 dev eth0 lladdr 74:12:13:21:53:88 STALE 
+fe80::7612:13ff:fe21:5382 dev br-lan lladdr 74:12:13:21:53:82 router STALE 
+fe80::10ee:cf73:e1f2:6635 dev br-lan lladdr 26:8a:67:c4:5c:c7 REACHABLE 
+
+ip -4 addr show:
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+4: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    inet 10.0.0.21/24 brd 10.0.0.255 scope global eth0
+       valid_lft forever preferred_lft forever
+13: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    inet 192.168.1.1/24 brd 192.168.1.255 scope global br-lan
+       valid_lft forever preferred_lft forever
+14: br-setup: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    inet 192.168.20.1/24 brd 192.168.20.255 scope global br-setup
+       valid_lft forever preferred_lft forever
+
+ip -4 route show:
+
+default via 10.0.0.1 dev eth0 proto static src 10.0.0.21 
+10.0.0.0/24 dev eth0 proto kernel scope link src 10.0.0.21 
+192.168.1.0/24 dev br-lan proto kernel scope link src 192.168.1.1 
+192.168.20.0/24 dev br-setup proto kernel scope link src 192.168.20.1 
+
+ip -6 addr show:
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 state UNKNOWN qlen 1000
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+4: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 fe80::7612:13ff:fe21:5388/64 scope link 
+       valid_lft forever preferred_lft forever
+13: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 fe80::50c8:7dff:fe54:7727/64 scope link 
+       valid_lft forever preferred_lft forever
+14: br-setup: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 fe80::7612:13ff:fe21:5389/64 scope link 
+       valid_lft forever preferred_lft forever
+21: ath0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 state UP 
+    inet6 fe80::7612:13ff:fe21:5389/64 scope link 
+       valid_lft forever preferred_lft forever
+22: ath7: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 fe80::7812:13ff:fe21:5389/64 scope link 
+       valid_lft forever preferred_lft forever
+23: ath0.4@ath0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 fe80::7612:13ff:fe21:5389/64 scope link 
+       valid_lft forever preferred_lft forever
+24: ath10: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 state UP 
+    inet6 fe80::7612:13ff:fe21:538a/64 scope link 
+       valid_lft forever preferred_lft forever
+25: ath10.4@ath10: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 fe80::7612:13ff:fe21:538a/64 scope link 
+       valid_lft forever preferred_lft forever
+28: ath10.sta1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UNKNOWN 
+    inet6 fe80::7612:13ff:fe21:538a/64 scope link 
+       valid_lft forever preferred_lft forever
+29: ath10.sta1.4@ath10.sta1: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 fe80::7612:13ff:fe21:538a/64 scope link 
+       valid_lft forever preferred_lft forever
+
+ip -6 route show:
+
+fe80::/64 dev br-lan proto kernel metric 256 pref medium
+fe80::/64 dev br-setup proto kernel metric 256 pref medium
+fe80::/64 dev eth0 proto kernel metric 256 pref medium
+fe80::/64 dev ath7 proto kernel metric 256 pref medium
+fe80::/64 dev ath0 proto kernel metric 256 pref medium
+fe80::/64 dev ath0.4 proto kernel metric 256 pref medium
+fe80::/64 dev ath10 proto kernel metric 256 pref medium
+fe80::/64 dev ath10.4 proto kernel metric 256 pref medium
+fe80::/64 dev ath10.sta1 proto kernel metric 256 pref medium
+fe80::/64 dev ath10.sta1.4 proto kernel metric 256 pref medium
+
+ip tunnel show:
+
+sit0: ipv6/ip remote any local any ttl 64 nopmtudisc 6rd-prefix 2002::/16
+gre0: gre/ip remote any local any ttl inherit nopmtudisc
+
+
+iptables -L -n -v:
+
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 2074 1281K ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            PHYSDEV match --physdev-is-bridged
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+iptables -t nat -nvL:
+
+Chain PREROUTING (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain POSTROUTING (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+iptables -t mangle -nvL:
+
+Chain PREROUTING (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain POSTROUTING (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+ip6tables -L -n -v:
+
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+ebtables -t broute -L --Lc:
+
+Bridge table: broute
+
+Bridge chain: BROUTING, entries: 4, policy: ACCEPT
+-p 802_1Q -i ath10.sta1 --vlan-id 4 -j DROP , pcnt = 0 -- bcnt = 0
+-p 802_1Q -i ath7.sta1 --vlan-id 4 -j DROP , pcnt = 0 -- bcnt = 0
+-p 802_1Q -i ath10 --vlan-id 4 -j DROP , pcnt = 0 -- bcnt = 0
+-p 802_1Q -i ath0 --vlan-id 4 -j DROP , pcnt = 0 -- bcnt = 0
+
+/var/log/ipv6.log:
+
+
+
+logread -l 100
+
+Mon Nov 10 11:33:23 2025 daemon.info dnsmasq-dhcp[1]: DHCPREQUEST(br-lan) 192.168.1.130 26:8a:67:c4:5c:c7
+Mon Nov 10 11:33:23 2025 daemon.info dnsmasq-dhcp[1]: DHCPACK(br-lan) 192.168.1.130 26:8a:67:c4:5c:c7 iPhone
+Mon Nov 10 11:33:23 2025 local7.notice UTOPIA: lan.dhcpserver action: add MAC: 26:8a:67:c4:5c:c7 IP: 192.168.1.130 HOSTNAME: iPhone IFACE: br-lan VENDOR_CLASS: ''
+Mon Nov 10 11:33:23 2025 local7.notice UTOPIA: ddd_ipv6_agent.status ddd_ipv6_agent service, triggered by lan_dhcp_client_change
+Mon Nov 10 11:33:24 2025 daemon.warn odhcpd[5100]: No default route present, overriding ra_lifetime!
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: level=0 type=8
+Mon Nov 10 11:33:27 2025 daemon.debug miniupnpd[7258]: ifindex = 13  192.168.1.1
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+Mon Nov 10 11:33:27 2025 kern.err kernel: [  282.688477] wlan: [7546:E:SPECTRAL] ucfg_spectral_is_mode_specific_request: Invalid spectral cp request id 6
+Mon Nov 10 11:33:27 2025 kern.err kernel: [  282.691660] wlan: [7548:E:SPECTRAL] ucfg_spectral_is_mode_specific_request: Invalid spectral cp request id 8
+Mon Nov 10 11:33:27 2025 daemon.warn devidentd[11666]: 192.168.1.223 not in br-lan neighbor table; resolving...
+
+
+NIC Counters
+  LAN :           RX bytes:141982675 (135.4 MiB)  TX bytes:11110228 (10.5 MiB)
+  WAN :           RX bytes:8629912 (8.2 MiB)  TX bytes:3732073 (3.5 MiB)
+
+================================================
+Connected clients on all interfaces
+cat /etc/dnsmasq.leases
+
+
+================ BT FW version info ================
+< HCI Command: ogf 0x3f, ocf 0x0310, plen 0
+> HCI Event: 0x0e plen 12
+  01 10 FF 00 07 00 01 00 03 00 F4 00 
+================ wifi/ble coexistence in PTA mode ================
+DIAG Read Word (address: 0xcb4014c)
+Value in target at 0xcb4014c: 0x43 (67)
+disable: 0x82
+enable : 0x43
+========================== Auto Onboarding Information ==========================
+linksys.auto_onboarding=linksys
+linksys.auto_onboarding.wired_enabled='1'
+linksys.auto_onboarding.bt_enabled='1'
+linksys.auto_onboarding.bt_threshold='70'
+linksys.auto_onboarding.bh_connect_timeout='240'
+linksys.auto_onboarding.auto_parent='0'
+linksys.auto_onboarding.pre_configured='0'
+linksys.auto_onboarding.user_acknowledged_auto_config='0'
+========================== Node Information ==========================
+tree /tmp/msg/
+
+cat /tmp/msg/DEVINFO/*
+{
+  "uuid": "CF77987D-55B8-4EDF-A761-741213215382",
+  "type": "status",
+  "TS": "2025-11-10T17:35:47Z",
+  "data": {
+  "SKU": "M60-US",
+  "serialNumber": "67A10M23F00002",
+  "fw_ver": "1.0.10.25111009",
+  "mode": "slave",
+  "ip": "192.168.1.213",
+  "userAp2G_bssid": "74:12:13:21:53:83",
+  "userAp2G_channel": "7",
+  "guestAp2G_bssid": "",
+  "userAp5GL_bssid": "74:12:13:21:53:84",
+  "userAp5GL_channel": "",
+  "userAp5GH_bssid": "",
+  "userAp5GH_channel": "",
+  "guestAp5G_bssid": "",
+  "mac": "74:12:13:21:53:82",
+  "bt_mac": "74:12:13:21:53:82",
+  "base_mac": "74:12:13:21:53:82",
+  "infrastructure": true,
+  "num_macs": 6,
+  "num_macs2": 6,
+  "extra_macs": [ "96:05:e1:99:a7:07", "7a:12:13:21:53:84", "00:03:7f:ba:db:ad", "7a:12:13:21:53:83", "74:12:13:21:53:82", "00:00:00:00:00:00", "74:12:13:21:53:84", "74:12:13:21:53:83", "7e:12:13:21:53:84", "82:12:13:21:53:83", "7e:12:13:21:53:83" ],
+  "description": "Linksys PINNACLE 2.0",
+  "hw_version": "XA",
+  "manufacturer": "Linksys",
+  "model_number": "M60-US",
+  "model_base": "M60-US",
+  "device_type": "urn:home-linksys-com:device:Router:1",
+  "bh_perf_test_time": "3",
+  "name": "Linksys00002"
+}
+}
+{
+  "uuid": "DB614F28-3BB5-48A2-9F65-741213215388",
+  "type": "status",
+  "TS": "2025-11-10T19:29:43Z",
+  "data": {
+  "SKU": "M60-US",
+  "serialNumber": "67A10M23F00003",
+  "fw_ver": "1.0.10.25111009",
+  "mode": "master",
+  "ip": "192.168.1.1",
+  "userAp2G_bssid": "74:12:13:21:53:89",
+  "userAp2G_channel": "7",
+  "guestAp2G_bssid": "",
+  "userAp5GL_bssid": "74:12:13:21:53:8A",
+  "userAp5GL_channel": "36",
+  "userAp5GH_bssid": "",
+  "userAp5GH_channel": "",
+  "guestAp5G_bssid": "",
+  "mac": "74:12:13:21:53:88",
+  "bt_mac": "74:12:13:21:53:88",
+  "base_mac": "74:12:13:21:53:88",
+  "infrastructure": true,
+  "num_macs": 6,
+  "num_macs2": 6,
+  "extra_macs": [ "7a:12:13:21:53:89", "74:12:13:21:53:8a", "74:12:13:21:53:88", "00:00:00:00:00:00", "74:12:13:21:53:89", "52:c8:7d:54:77:27" ],
+  "description": "Linksys PINNACLE 2.0",
+  "hw_version": "XA",
+  "manufacturer": "Linksys",
+  "model_number": "M60-US",
+  "model_base": "M60-US",
+  "device_type": "urn:home-linksys-com:device:Router:1",
+  "bh_perf_test_time": "3",
+  "name": "Linksys00003"
+}
+}
+cat /tmp/msg/BH/*/status
+{
+  "uuid": "CF77987D-55B8-4EDF-A761-741213215382",
+  "type": "status",
+  "TS": "2025-11-10T17:36:06Z",
+  "data": {
+  "intf": "5GH",
+  "phy_intf": "ath14",
+  "type": "WIRELESS",
+  "channel": "153",
+  "rssi": "-22",
+  "noise": "-97",
+  "phyRate": "1.4412 Gb/s",
+  "phyRate_2": "1.4412 Gb/s",
+  "ap_bssid": "74:12:13:21:53:8A",
+  "sta_bssid": "7A:12:13:21:53:84",
+  "mac": "",
+  "mlo_backhaul": "0",
+  "userAp2G_bssid": "74:12:13:21:53:83",
+  "ip": "192.168.1.213",
+  "state": "up"
+}
+}
+cat /tmp/msg/MESHUSB/*/partitions
+{
+  "type": "status",
+  "TS": "2025-11-10T17:35:53Z",
+  "data": {
+  "partitions": [
+  
+]
+}
+}
+bh_report
+Node (MAC)   NODE IP         PARENT IP       Intf. Chan.  RSSI(AP/STA) Speed     State TX Rate (M) RX Rate (M) MLO Timestamp   
+------------ --------------- --------------- ----- -----  ------------ --------- ----- ----------- ----------- --- ------------
+741213215382 192.168.1.213   192.168.1.1     5GH   153    -22/-21      170.92300 up    952116      1202620     0   1762803068  
+wlan_report
+      Client       Stat  Net      Node     MCS  RSSI           When
+-----------------  ----  ----  ----------  ---  ----  -----------------------
+26:8a:67:c4:5c:c7  up    WLAN  master      648M  -41  2025-11-10T19:33:20Z
+7a:12:13:21:53:84  up    WLAN  master      648M  -21  2025-11-10T19:30:23Z
+ce:ef:ac:75:44:5a  up    WLAN  master      520M  -32  2025-11-10T19:31:05Z
+
+show_devices:
+               UUID                         MAC(s)              IP         Conn.  Stat        Name             FW Ver        Role 
+------------------------------------  -----------------  ----------------  -----  ----  ----------------  ----------------  ------
+7B378F04-9FB1-4BB9-B85D-07C3BE91C4F4  26:8a:67:c4:5c:c7  192.168.1.130     Wi-Fi  Up                                        client 
+0F317275-91AA-4B7F-A4EC-0336AF660D0F  ce:ef:ac:75:44:5a  192.168.1.190     Wi-Fi  Up    jianrongçš„Mac..                    client 
+"    "    "    "    "    "    "    "  "    "    "     "  fe80:0000:0000:0000:0c37:51b5:1fe7:2295                                                          
+CF77987D-55B8-4EDF-A761-741213215382  7a:12:13:21:53:84                    Wi-Fi  Down  Linksys00002      1.0.10.25111009   slave  
+"    "    "    "    "    "    "    "  74:12:13:21:53:82  192.168.1.213            Up                                               
+"    "    "    "    "    "    "    "  "    "    "     "  fe80:0000:0000:0000:7612:13ff:fe21:5382                                                          
+"    "    "    "    "    "    "    "  74:12:13:21:53:83                           Down                                             
+"    "    "    "    "    "    "    "  7e:12:13:21:53:83                           Down                                             
+DFCEAEB3-1F0C-4390-93A8-AE01291CCA29  24:f5:a2:f2:06:03  192.168.1.254     wired  Down                                      client 
+"    "    "    "    "    "    "    "  "    "    "     "  fe80:0000:0000:0000:a50e:5604:4ccf:347b                                                          
+DB614F28-3BB5-48A2-9F65-741213215388  BE:67:62:FB:D1:F3                    wired  Down  Linksys00003      1.0.10.25111009   master 
+"    "    "    "    "    "    "    "  74:12:13:21:53:88  192.168.1.1              Up                                               
+"    "    "    "    "    "    "    "  CA:2F:B9:2A:A4:B2                    wired  Down                                             
+"    "    "    "    "    "    "    "  FA:31:4B:00:C0:2C                    wired  Down                                             
+"    "    "    "    "    "    "    "  22:2E:53:3E:1A:86                    wired  Down                                             
+"    "    "    "    "    "    "    "  76:9E:36:4D:01:1B                    wired  Down                                             
+"    "    "    "    "    "    "    "  06:D6:BB:5A:5E:9F                    wired  Down                                             
+"    "    "    "    "    "    "    "  52:C8:7D:54:77:27  192.168.1.1       wired  Up                                               
+9A46F362-64F3-4AFD-AB75-B3B501F7DD80  f2:ad:c8:00:c2:53                    Wi-Fi  Down                                      client 
+035FA9DE-E1A4-46F0-993D-9753509E5B1C  e4:70:b8:6c:dc:de                    Wi-Fi  Down  DESKTOP-Q47VE0J                     client 
+90F0DAE7-D14E-4A21-941B-08D37ADC0451  f4:0f:24:3a:d5:34                    Wi-Fi  Down                                      client 
+
+========================== Cognitive Mesh Information ==========================
+===parents_bh_report_log===
+
+
+===bh_perform_low_notification_log===
+--------------------------------------
+low performance notification criteria
+
+--------------------------------------
+
+
+===auto_channel_finder_event_log===
+Timestamp                Interface   Channel     Bitrate           Opmode            Event
+-----------------------  ---------- ---------  -----------    -----------------  --------------
+
+
+concurrent connection count, maximum[65535]:
+552
+ps:
+
+  PID USER       VSZ STAT COMMAND
+    1 root      1244 S    /sbin/procd
+    2 root         0 SW   [kthreadd]
+    3 root         0 IW<  [rcu_gp]
+    4 root         0 IW<  [rcu_par_gp]
+    5 root         0 IW   [kworker/0:0-eve]
+    6 root         0 IW<  [kworker/0:0H-ev]
+    7 root         0 SW   [kworker/u8:0+WC]
+    8 root         0 IW<  [mm_percpu_wq]
+    9 root         0 SW   [ksoftirqd/0]
+   10 root         0 IW   [rcu_preempt]
+   11 root         0 SW   [migration/0]
+   12 root         0 SW   [cpuhp/0]
+   13 root         0 SW   [cpuhp/1]
+   14 root         0 SW   [migration/1]
+   15 root         0 SW   [ksoftirqd/1]
+   16 root         0 IW   [kworker/1:0-rcu]
+   17 root         0 IW<  [kworker/1:0H-kb]
+   18 root         0 SW   [cpuhp/2]
+   19 root         0 SW   [migration/2]
+   20 root         0 RW   [ksoftirqd/2]
+   21 root         0 IW   [kworker/2:0-eve]
+   22 root         0 IW<  [kworker/2:0H-ev]
+   23 root         0 SW   [cpuhp/3]
+   24 root         0 SW   [migration/3]
+   25 root         0 SW   [ksoftirqd/3]
+   26 root         0 IW   [kworker/3:0-mm_]
+   27 root         0 IW<  [kworker/3:0H-kb]
+   28 root         0 IW<  [netns]
+   29 root         0 SW   [rcu_tasks_kthre]
+   30 root         0 IW   [kworker/0:1-eve]
+   31 root         0 SW   [oom_reaper]
+   32 root         0 IW<  [writeback]
+   33 root         0 SW   [kcompactd0]
+   67 root         0 IW<  [kblockd]
+   68 root         0 IW<  [blkcg_punt_bio]
+   69 root         0 IW<  [kworker/u9:0-hc]
+   70 root         0 SW   [watchdogd]
+   71 root         0 IW   [kworker/2:1-mm_]
+   72 root         0 SW   [kswapd0]
+   74 root         0 IW<  [kthrotld]
+   75 root         0 SW   [irq/108-smp2p]
+   76 root         0 IW   [kworker/u8:1-ec]
+   77 root         0 SW   [hwrng]
+   79 root         0 IW<  [nvme-wq]
+   80 root         0 IW<  [nvme-reset-wq]
+   81 root         0 IW<  [nvme-delete-wq]
+   82 root         0 IW<  [kworker/0:1H-ev]
+   83 root         0 IW   [kworker/3:1-ipv]
+   88 root         0 IW   [kworker/1:1-ipv]
+   89 root         0 SW   [irq/109-q6v5 wd]
+   90 root         0 IW<  [ipv6_addrconf]
+   91 root         0 IW<  [dsa_ordered]
+   92 root         0 SW   [ubi_bgt0d]
+   93 root         0 IW<  [kworker/2:1H]
+   95 root         0 IW<  [kworker/3:1H]
+   96 root         0 IW   [kworker/3:2-pm]
+   97 root         0 IW<  [ata_sff]
+  108 root         0 IW<  [kworker/2:2H]
+  109 root         0 IW   [kworker/0:2-eve]
+  110 root         0 IW<  [kworker/1:1H]
+  199 root         0 SW   [ubifs_bgt0_3]
+  251 ubus       888 S    /sbin/ubusd
+  252 root      1272 S    /bin/ash --login
+  283 root         0 IW<  [kworker/0:2H-ev]
+  284 root         0 IW   [kworker/u8:2-wm]
+  288 root         0 IW<  [kworker/3:2H-kb]
+  298 root      3964 S    /sbin/rngd -f -r /dev/hwrng
+  328 root         0 IW<  [kworker/1:2H-kb]
+  354 root       792 S    /sbin/urngd
+  357 root      1216 S    /usr/bin/cnssdaemon -s
+  708 root      1172 S    /usr/sbin/acfg_tool -e -s -t 192.168.1.254
+  826 root         0 IW<  [bond0]
+ 1021 root         0 IW<  [cfg80211]
+ 1024 root         0 SW   [irq/159-soc:gpi]
+ 1025 root         0 SW   [irq/160-soc:gpi]
+ 1026 root         0 SW   [irq/161-soc:gpi]
+ 1027 root         0 SW   [irq/162-soc:gpi]
+ 1028 root         0 SW   [irq/163-soc:gpi]
+ 1029 root         0 SW   [irq/164-soc:gpi]
+ 1030 root         0 IW   [kworker/1:2-eve]
+ 1089 root         0 SW   [kworker/u8:6+ev]
+ 1094 root         0 IW<  [diag_real_time_]
+ 1095 root         0 IW<  [diag_wq]
+ 1096 root         0 IW<  [DIAG_USB_diag]
+ 1097 root         0 IW<  [diag_cntl_wq]
+ 1098 root         0 IW<  [diag_dci_wq]
+ 1099 root         0 IW<  [WCNSS_CNTL]
+ 1100 root         0 IW<  [WCNSS_DATA]
+ 1101 root         0 IW<  [WCNSS_CMD]
+ 1102 root         0 IW<  [WCNSS_DCI]
+ 1103 root         0 IW<  [WCNSS_DCI_CMD]
+ 1104 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1105 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1106 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1107 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1108 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1109 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1110 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1111 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1112 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1113 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1114 root         0 IW<  [DIAG_RPMSG_APPS]
+ 1115 root         0 IW<  [DIAG_RPMSG_APPS]
+ 1116 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1117 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1118 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1119 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1120 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1121 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1122 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1123 root         0 IW<  [DIAG_RPMSG_DIAG]
+ 1124 root         0 IW<  [diag_mhi_MDM]
+ 1125 root         0 IW<  [DIAG_USB_diag_m]
+ 1126 root         0 IW<  [diag_mhi_MDM_DC]
+ 1127 root         0 IW<  [diag_dci_MDM_DC]
+ 1128 root         0 IW<  [diag_mhi_MDM_2]
+ 1129 root         0 IW<  [DIAG_USB_diag_m]
+ 1130 root         0 IW<  [diag_mhi_MDM_DC]
+ 1131 root         0 IW<  [diag_dci_MDM_DC]
+ 1178 logd       960 S    /sbin/logd -S 64
+ 1179 root       964 S    /sbin/logread -f -F /var/log/messages -p /var/run/lo
+ 1198 root         0 IW<  [wq_rtm_newneigh]
+ 1263 root      1892 S    /sbin/rpcd -s /var/run/ubus/ubus.sock -t 30
+ 1365 root         0 SW<  [krfcommd]
+ 1369 root         0 IW<  [uas]
+ 1805 root       900 S    /usr/sbin/dropbear -F -P /var/run/dropbear.1.pid -p
+ 1838 root         0 IW   [kworker/u8:3-ec]
+ 2603 root      1260 S    /sbin/netifd
+ 2928 root         0 IW   [kworker/0:3]
+ 2984 root      8468 S    wpa_supplicant -g /var/run/wpa_supplicantglobal -B -
+ 2997 root      8880 S    hostapd -g /var/run/hostapd/global -B -P /var/run/ho
+ 3938 root      1268 S    sleep 60
+ 4341 root         0 SW   [ECM_wifi_event]
+ 4342 root         0 IW<  [ecm_ppe_ipv4_wo]
+ 4343 root         0 IW<  [ecm_sfe_ipv4_wo]
+ 4354 root         0 IW<  [ecm_ppe_ipv6_wo]
+ 4355 root         0 IW<  [ecm_sfe_ipv6_wo]
+ 4389 root         0 IW   [kworker/2:2-eve]
+ 4579 root      2592 S    /sbin/syseventd
+ 4596 root       784 S    syseventd_fork_helper 7
+ 4620 root       808 S    odhcp6c -s /lib/netifd/dhcpv6.script -P0 -t120 eth0
+ 4621 root      1268 S    udhcpc -p /var/run/udhcpc-eth0.pid -s /lib/netifd/dh
+ 5016 root      1156 S    /usr/bin/lsledd
+ 5100 root      1036 S    /usr/sbin/odhcpd
+ 5834 root      1276 S    /usr/bin/dbus-daemon --system --nofork
+ 6394 root       840 S    xl2tpd -D -l -p /var/run/xl2tpd.pid
+ 6398 root      6508 D    /usr/bin/mDNSResponder -b -f /etc/mDNSResponder.conf
+ 6454 root      3536 S    /usr/bin/bluetoothd -n
+ 6481 root      1296 S    {service_ddd_ipv} /bin/sh /etc/init.d/service_ddd_ip
+ 6495 root      1268 S    sleep 11
+ 6924 nobody    4744 S    /usr/bin/stunnel /var/etc/stunnel.conf
+ 7182 root      1284 S    {sysinfo.cgi} /bin/sh /www/sysinfo.cgi
+ 7258 root      1088 S    /usr/sbin/miniupnpd -f /var/etc/miniupnpd.conf -d
+ 7579 root         0 IW   [kworker/u8:4-ec]
+ 7662 root      1272 S    /usr/sbin/crond -f -c /etc/crontabs -l 9
+ 7759 root       836 R    /sbin/modprobe -q -- ath7.sta1
+ 7761 root      1276 R    ps
+ 8707 root         0 SW   [ubi_bgt1d]
+ 8715 root         0 SW   [ubifs_bgt1_0]
+ 8995 root      3980 S    /usr/sbin/devicedb --daemon --udspath /tmp/devicedb/
+ 9330 nobody    6668 R    mdnsd
+ 9944 root         0 IW<  [kworker/u9:1-hc]
+ 9945 root       760 S    hciattach -s 115200 /dev/ttyMSM1 any 115200
+ 9946 root         0 IW<  [kworker/u9:2-hc]
+10197 root         0 SW   [wlan_logging_th]
+10416 root      2092 S    {ntpd} /sbin/ujail -t 5 -n ntpd -U ntp -G ntp -C /et
+10449 ntp       1268 S    /usr/sbin/ntpd -n -N -S /usr/sbin/ntpd-hotplug -p 0.
+10468 root      1052 S<   /usr/sbin/thermald
+10576 root         0 SW<  [scheduler_threa]
+11134 root       840 S    /sbin/thrulayd -p 5003
+11170 root      7548 S    /usr/sbin/mosquitto -d -c /tmp/etc/mosquitto/mosquit
+11560 root         0 SW   [qrtr_rx]
+11611 root      3924 S    /usr/sbin/ddd_ethernet_agent -d
+11636 root      1108 S    /usr/bin/lldpd -I eth*
+11639 admin     1128 S    /usr/bin/lldpd -I eth*
+11657 root         0 IW<  [kworker/3:3H]
+11666 root      7968 D    devidentd -x /tmp/var/config/devidentd/devregex.json
+11674 root      1620 S    /usr/bin/lldpcli -f keyvalue -l /tmp/nb -U /tmp/var/
+12073 root         0 IW   [kworker/u8:5-wm]
+12297 root      6856 S    sct_server --config_file /etc/secure_config.conf --p
+12725 root      6064 S    omsgd -m -H localhost -p 1883 -D
+14636 root      6324 S    /usr/sbin/subscriber -D -H localhost -k 60 -p 1883
+16127 root      5392 S    /usr/bin/jbond -c /tmp/jbond/jbond.conf -l /var/log/
+17039 root       976 S    /usr/bin/lscore
+17153 root      3040 S    /usr/sbin/mcproxy -f /var/etc/mcproxy_mcproxy.conf
+17461 root       816 S    /usr/sbin/pppoe-relay -F -S eth0 -C br-lan -n 64 -i
+17815 root       896 S    /usr/sbin/nfqrecv
+17881 root       864 S    /usr/sbin/trigger
+18418 network   1888 S    /usr/sbin/zebra -d -f /var/etc/quagga/zebra.conf
+18423 root      1100 S    /usr/sbin/watchquagga -d -z -T 60 -r /usr/sbin/quagg
+19085 root      2092 S    {dnsmasq} /sbin/ujail -t 5 -n dnsmasq -u -l -e USER_
+19110 dnsmasq   1300 S    /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c
+19116 root      1236 S    /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c
+20234 root      1400 S    {cbt_check_inter} /bin/sh /usr/bin/cbt_check_interne
+20894 root      1420 S    /usr/sbin/mcsd -d -C /tmp/mcs.conf
+20980 root      5384 S    /usr/sbin/lsc_server -d
+21828 root         0 IW   [kworker/2:3-ipv]
+22121 root      1420 S    /usr/sbin/mcsd -d -C /tmp/mcs.conf
+23970 root      5604 S    /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
+24805 root         0 IW   [kworker/1:3-rcu]
+27274 nobody    1924 S    mdnsd
+27498 root       804 S    /usr/bin/dns-sd -R myrouter _http._tcp local 80
+27528 root       760 S    /usr/sbin/mdns_register -i 192.168.1.1 -p 1883
+27987 root      3788 S    /usr/sbin/ddd_arp_agent -d -f -m 96:05:e1:99:a7:07,7
+disk usage:
+
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/mtdblock29          28672     28672         0 100% /rom
+tmpfs                   211264      2072    209192   1% /tmp
+/dev/ubi0_3              93240       336     88108   0% /overlay
+overlayfs:/overlay       93240       336     88108   0% /
+tmpfs                      512         0       512   0% /dev
+/dev/mtdblock27           5888      5888         0 100% /lib/firmware/IPQ5332/WIFI_FW
+ubi1:syscfg             128332        52    123444   0% /tmp/config
+
+Memory Use:
+free
+              total        used        free      shared  buff/cache   available
+Mem:         422528      197328      117516        2252      107684      166980
+Swap:             0           0           0
+
+cat /proc/locks
+1: FLOCK  ADVISORY  WRITE 6490 00:13:23008 0 EOF
+2: POSIX  ADVISORY  WRITE 18418 00:13:37013 0 EOF
+3: FLOCK  ADVISORY  WRITE 11656 00:13:27243 0 EOF
+4: POSIX  ADVISORY  WRITE 18423 00:13:35799 0 EOF
+
+
+cat /proc/vmstat
+nr_free_pages 29124
+nr_zone_inactive_anon 471
+nr_zone_active_anon 6410
+nr_zone_inactive_file 8063
+nr_zone_active_file 12985
+nr_zone_unevictable 0
+nr_zone_write_pending 0
+nr_mlock 0
+nr_page_table_pages 364
+nr_kernel_stack 3744
+nr_bounce 0
+nr_free_cma 0
+nr_inactive_anon 471
+nr_active_anon 6410
+nr_inactive_file 8063
+nr_active_file 12985
+nr_unevictable 0
+nr_slab_reclaimable 5451
+nr_slab_unreclaimable 25609
+nr_isolated_anon 0
+nr_isolated_file 0
+workingset_nodes 0
+workingset_refault 0
+workingset_activate 0
+workingset_restore 0
+workingset_nodereclaim 0
+nr_anon_pages 6343
+nr_mapped 4935
+nr_file_pages 21630
+nr_dirty 0
+nr_writeback 0
+nr_writeback_temp 0
+nr_shmem 563
+nr_shmem_hugepages 0
+nr_shmem_pmdmapped 0
+nr_file_hugepages 0
+nr_file_pmdmapped 0
+nr_anon_transparent_hugepages 0
+nr_unstable 0
+nr_vmscan_write 0
+nr_vmscan_immediate_reclaim 0
+nr_dirtied 267
+nr_written 257
+nr_kernel_misc_reclaimable 0
+nr_dirty_threshold 8803
+nr_dirty_background_threshold 4396
+pgpgin 51917
+pgpgout 0
+pswpin 0
+pswpout 0
+pgalloc_normal 6113231
+pgalloc_high 0
+pgalloc_movable 0
+allocstall_normal 0
+allocstall_high 0
+allocstall_movable 0
+pgskip_normal 0
+pgskip_high 0
+pgskip_movable 0
+pgfree 6142820
+pgactivate 20457
+pgdeactivate 492
+pglazyfree 0
+pgfault 6783238
+pgmajfault 1816
+pglazyfreed 0
+pgrefill 0
+pgsteal_kswapd 0
+pgsteal_direct 0
+pgscan_kswapd 0
+pgscan_direct 0
+pgscan_direct_throttle 0
+pginodesteal 20
+slabs_scanned 35556
+kswapd_inodesteal 0
+kswapd_low_wmark_hit_quickly 0
+kswapd_high_wmark_hit_quickly 0
+pageoutrun 0
+pgrotated 126
+drop_pagecache 3
+drop_slab 3
+oom_kill 0
+pgmigrate_success 0
+pgmigrate_fail 0
+compact_migrate_scanned 0
+compact_free_scanned 0
+compact_isolated 0
+compact_stall 0
+compact_fail 0
+compact_success 0
+compact_daemon_wake 0
+compact_daemon_migrate_scanned 0
+compact_daemon_free_scanned 0
+unevictable_pgs_culled 0
+unevictable_pgs_scanned 0
+unevictable_pgs_rescued 0
+unevictable_pgs_mlocked 0
+unevictable_pgs_munlocked 0
+unevictable_pgs_cleared 0
+unevictable_pgs_stranded 0
+
+CPU Information
+cat /proc/stat
+cpu  13655 0 42844 52131 405 990 2386 0 0 0
+cpu0 3037 0 10157 12904 64 340 1431 0 0 0
+cpu1 3561 0 10677 13255 102 267 340 0 0 0
+cpu2 3598 0 11502 12372 114 201 327 0 0 0
+cpu3 3457 0 10507 13598 125 181 287 0 0 0
+intr 1974937 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1184526 0 0 0 0 0 0 0 826 317 314 454 522 222 229 184 283 517 498 0 0 2610 3297 8 0 0 0 0 0 0 0 0 0 0 0 0 0 51 4534 45 312418 0 0 0 0 0 0 0 5 5676 4504 452 0 52 0 0 0 11727 0 0 0 0 0 10 0 13 6 0 57 24 77 0 11218 0 2 0 0 0 0 309 220 201 1002 0 0 0 0 0 0 9 0 0 0 0 0 0 1 1 0 0 1 1 0 0 1 1 0 0 5865 24009 9095 592 52 4181 488 2573 427 5804 623 524 0 107488 0 0 55 1769 4581 8537 0 0 0 0 0 0 0 0 0 0 0 27 0 0 0 0 0 0 0 0 288
+ctxt 3319231
+btime 1762802925
+processes 40139
+procs_running 3
+procs_blocked 0
+softirq 1626160 0 99580 100 139239 0 0 280743 70583 0 1035915
+
+meminfo
+MemTotal:         422528 kB
+MemFree:          117448 kB
+MemAvailable:     166872 kB
+Buffers:           19096 kB
+Cached:            67424 kB
+SwapCached:            0 kB
+Active:            77580 kB
+Inactive:          34136 kB
+Active(anon):      25640 kB
+Inactive(anon):     1884 kB
+Active(file):      51940 kB
+Inactive(file):    32252 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:             0 kB
+HighFree:              0 kB
+LowTotal:         422528 kB
+LowFree:          117448 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         25372 kB
+Mapped:            19740 kB
+Shmem:              2252 kB
+KReclaimable:      21084 kB
+Slab:             123140 kB
+SReclaimable:      21084 kB
+SUnreclaim:       102056 kB
+KernelStack:        3776 kB
+PageTables:         1344 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      211264 kB
+Committed_AS:      44008 kB
+VmallocTotal:    2605056 kB
+VmallocUsed:       30052 kB
+VmallocChunk:          0 kB
+Percpu:              768 kB
+
+mpstat
+Linux 5.4.213 (Linksys00003) 	11/10/25 	_armv7l_	(4 CPU)
+
+11:33:29     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+11:33:29     all   12.15    0.00   38.12    0.36    0.88    2.12    0.00    0.00    0.00   46.37
+11:33:29       0   10.87    0.00   36.36    0.23    1.22    5.12    0.00    0.00    0.00   46.20
+11:33:29       1   12.62    0.00   37.86    0.36    0.95    1.21    0.00    0.00    0.00   46.99
+11:33:29       2   12.80    0.00   40.91    0.41    0.71    1.16    0.00    0.00    0.00   44.00
+11:33:29       3   12.28    0.00   37.33    0.44    0.64    1.02    0.00    0.00    0.00   48.29
+
+top -bn1
+Mem: 307916K used, 114612K free, 2256K shrd, 19156K buff, 67512K cached
+CPU:   9% usr  42% sys   0% nic  47% idle   0% io   0% irq   0% sirq
+Load average: 3.71 2.32 1.01 4/230 7783
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 9330     1 nobody   R     6668   2%   1  24% mdnsd
+ 7775  7774 root     R     1304   0%   2   2% top -bn1
+ 2997     1 root     S     8880   2%   0   0% hostapd -g /var/run/hostapd/global -B -P /var/run/hostapd-global.pid -f tmp/hostapd.txt
+ 2984     1 root     S     8468   2%   3   0% wpa_supplicant -g /var/run/wpa_supplicantglobal -B -P /var/run/wpa_supplicant-global.pid
+11666     1 root     D     7968   2%   2   0% devidentd -x /tmp/var/config/devidentd/devregex.json -r /tmp/devregex.json -p /var/run/devidentd.pid br-lan
+11170     1 root     S     7548   2%   3   0% /usr/sbin/mosquitto -d -c /tmp/etc/mosquitto/mosquitto.conf
+12297     1 root     S     6856   2%   3   0% sct_server --config_file /etc/secure_config.conf --port 6060 --daemon
+ 6398     1 root     D     6508   2%   3   0% /usr/bin/mDNSResponder -b -f /etc/mDNSResponder.conf
+14636     1 root     S     6324   1%   1   0% /usr/sbin/subscriber -D -H localhost -k 60 -p 1883
+12725     1 root     S     6064   1%   0   0% omsgd -m -H localhost -p 1883 -D
+23970     1 root     S     5640   1%   2   0% /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
+16127     1 root     S     5392   1%   1   0% /usr/bin/jbond -c /tmp/jbond/jbond.conf -l /var/log/jbond.log -vv
+20980     1 root     S     5384   1%   2   0% /usr/sbin/lsc_server -d
+ 6924     1 nobody   S     4744   1%   3   0% /usr/bin/stunnel /var/etc/stunnel.conf
+ 8995     1 root     S     3980   1%   0   0% /usr/sbin/devicedb --daemon --udspath /tmp/devicedb/server_link --dbfile /tmp/devicedb/devicedb.db --dbtransientfile /tmp/devicedb/transient.db
+  298     1 root     S     3964   1%   2   0% /sbin/rngd -f -r /dev/hwrng
+11611     1 root     S     3924   1%   2   0% /usr/sbin/ddd_ethernet_agent -d
+27987     1 root     S     3788   1%   0   0% /usr/sbin/ddd_arp_agent -d -f -m 96:05:e1:99:a7:07,7a:12:13:21:53:84,00:03:7f:ba:db:ad,7a:12:13:21:53:83,74:12:13:21:53:82,00:00:00:00:00:00,74:12:13:21:53:84,74:12:13:21:53:83,7e:12:13:21:53:84,82:12:13:21:53:83,7e:12:13:21:53:83,7a:12:13:21:53:89,74:12:13:21:53:8a,74:12:13:21:53:88,74:12:13:21:53:89,52:c8:7d:54:77:27
+ 6454     1 root     S     3536   1%   3   0% /usr/bin/bluetoothd -n
+17153     1 root     S     3040   1%   2   0% /usr/sbin/mcproxy -f /var/etc/mcproxy_mcproxy.conf
+ 4579     1 root     S     2592   1%   2   0% /sbin/syseventd
+10416     1 root     S     2092   0%   0   0% {ntpd} /sbin/ujail -t 5 -n ntpd -U ntp -G ntp -C /etc/capabilities/ntpd.json -c -u -r /bin/ubus -r /usr/bin/env -r /usr/bin/jshn -r /usr/sbin/ntpd-hotplug -r /usr/share/libubox/jshn.sh -- /usr/sbin/ntpd -n -N -S /usr/sbin/ntpd-hotplug -p 0.pool.ntp.org -p 2.pool.ntp.org -p 0.openwrt.pool.ntp.org -p 1.openwrt.pool.ntp.org -p 2.openwrt.pool.ntp.org -p 0.asia.pool.ntp.org -p 1.asia.pool.ntp.org -p 2.
+19085     1 root     S     2092   0%   0   0% {dnsmasq} /sbin/ujail -t 5 -n dnsmasq -u -l -e USER_DHCPSCRIPT -r /bin/echo -r /bin/grep -r /bin/mv -r /bin/sed -r /bin/sh -r /bin/ubus -r /etc/TZ -r /etc/dnsmasq.conf -r /etc/ethers -r /etc/group -r /etc/hosts -r /etc/init.d/dnsmasq_dhcp.script -r /etc/init.d/ulog_functions.sh -r /etc/passwd -r /sbin/sysevent -w /tmp -w /tmp/dhcp.leases -r /tmp/dnsmasq.d -r /tmp/hosts -r /tmp/resolv.conf.d -r /us
+27274     1 nobody   S     1924   0%   3   0% mdnsd
+ 1263     1 root     S     1892   0%   3   0% /sbin/rpcd -s /var/run/ubus/ubus.sock -t 30
+18418     1 network  S     1888   0%   3   0% /usr/sbin/zebra -d -f /var/etc/quagga/zebra.conf
+11674     1 root     S     1620   0%   1   0% /usr/bin/lldpcli -f keyvalue -l /tmp/nb -U /tmp/var/config/lldp_dev_update.sh -D /tmp/var/config/lldp_dev_delete.sh -A /tmp/var/config/lldp_dev_added.sh watch details
+22121     1 root     S     1420   0%   3   0% /usr/sbin/mcsd -d -C /tmp/mcs.conf
+20894     1 root     S     1420   0%   3   0% /usr/sbin/mcsd -d -C /tmp/mcs.conf
+20234     1 root     S     1400   0%   3   0% {cbt_check_inter} /bin/sh /usr/bin/cbt_check_internet.sh
+19110 19085 dnsmasq  S     1300   0%   3   0% /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c -k -x /var/run/dnsmasq/dnsmasq.cfg01411c.pid
+ 6481     1 root     S     1296   0%   3   0% {service_ddd_ipv} /bin/sh /etc/init.d/service_ddd_ipv6_agent.sh WIFI::link_status_changed up,74:12:13:21:53:8A,ath10,26:8a:67:c4:5c:c7,5G,11BEA_EHT80,1201M,-41,false
+ 5834     1 root     S     1276   0%   3   0% /usr/bin/dbus-daemon --system --nofork
+  252     1 root     S     1272   0%   1   0% /bin/ash --login
+ 7182 23970 root     S     1272   0%   2   0% {sysinfo.cgi} /bin/sh /www/sysinfo.cgi
+ 7662     1 root     S     1272   0%   3   0% /usr/sbin/crond -f -c /etc/crontabs -l 9
+ 7774  7182 root     S     1272   0%   0   0% {sysinfo.cgi} /bin/sh /www/sysinfo.cgi
+10449 10416 ntp      S     1268   0%   0   0% /usr/sbin/ntpd -n -N -S /usr/sbin/ntpd-hotplug -p 0.pool.ntp.org -p 2.pool.ntp.org -p 0.openwrt.pool.ntp.org -p 1.openwrt.pool.ntp.org -p 2.openwrt.pool.ntp.org -p 0.asia.pool.ntp.org -p 1.asia.pool.ntp.org -p 2.asia.pool.ntp.org -p 0.north-america.pool.ntp.org -p 1.north-america.pool.ntp.org -p 2.north-america.pool.ntp.org
+ 4621  2603 root     S     1268   0%   0   0% udhcpc -p /var/run/udhcpc-eth0.pid -s /lib/netifd/dhcp.script -f -t 0 -i eth0 -x hostname:Linksys00003 -C -R -O 212 -O 121
+ 3938 20234 root     S     1268   0%   1   0% sleep 60
+ 6495  6481 root     S     1268   0%   1   0% sleep 11
+ 2603     1 root     S     1260   0%   1   0% /sbin/netifd
+    1     0 root     S     1244   0%   2   0% /sbin/procd
+19116 19110 root     S     1236   0%   1   0% /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c -k -x /var/run/dnsmasq/dnsmasq.cfg01411c.pid
+  357     1 root     S     1216   0%   2   0% /usr/bin/cnssdaemon -s
+  708     1 root     S     1172   0%   3   0% /usr/sbin/acfg_tool -e -s -t 192.168.1.254
+ 5016     1 root     S     1156   0%   3   0% /usr/bin/lsledd
+11639 11636 admin    S     1128   0%   1   0% /usr/bin/lldpd -I eth*
+11636     1 root     S     1108   0%   2   0% /usr/bin/lldpd -I eth*
+18423     1 root     S     1100   0%   3   0% /usr/sbin/watchquagga -d -z -T 60 -r /usr/sbin/quagga.init watchrestart %s zebra
+ 7258     1 root     S     1088   0%   3   0% /usr/sbin/miniupnpd -f /var/etc/miniupnpd.conf -d
+10468     1 root     S<    1052   0%   2   0% /usr/sbin/thermald
+ 5100     1 root     S     1036   0%   3   0% /usr/sbin/odhcpd
+17039     1 root     S      976   0%   3   0% /usr/bin/lscore
+ 1179     1 root     S      964   0%   3   0% /sbin/logread -f -F /var/log/messages -p /var/run/logread.1.pid -S 64
+ 1178     1 logd     S      960   0%   2   0% /sbin/logd -S 64
+ 1805     1 root     S      900   0%   2   0% /usr/sbin/dropbear -F -P /var/run/dropbear.1.pid -p 22 -K 300 -T 3 -W 262144
+17815     1 root     S      896   0%   0   0% /usr/sbin/nfqrecv
+  251     1 ubus     S      888   0%   1   0% /sbin/ubusd
+17881     1 root     S      864   0%   0   0% /usr/sbin/trigger
+ 7782  1089 root     R      864   0%   3   0% [modprobe]
+ 6394     1 root     S      840   0%   2   0% xl2tpd -D -l -p /var/run/xl2tpd.pid
+11134     1 root     S      840   0%   1   0% /sbin/thrulayd -p 5003
+17461     1 root     S      816   0%   0   0% /usr/sbin/pppoe-relay -F -S eth0 -C br-lan -n 64 -i 60
+ 4620  2603 root     S      808   0%   3   0% odhcp6c -s /lib/netifd/dhcpv6.script -P0 -t120 eth0
+27498     1 root     S      804   0%   0   0% /usr/bin/dns-sd -R myrouter _http._tcp local 80
+  354     1 root     S      792   0%   1   0% /sbin/urngd
+ 4596     1 root     S      784   0%   1   0% syseventd_fork_helper 7
+ 9945     1 root     S      760   0%   0   0% hciattach -s 115200 /dev/ttyMSM1 any 115200
+27528     1 root     S      760   0%   0   0% /usr/sbin/mdns_register -i 192.168.1.1 -p 1883
+  109     2 root     IW       0   0%   0   0% [kworker/0:2-eve]
+    9     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   15     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   25     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   20     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+   30     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+10576     2 root     SW<      0   0%   1   0% [scheduler_threa]
+   83     2 root     IW       0   0%   3   0% [kworker/3:1-ipv]
+ 7579     2 root     IW       0   0%   0   0% [kworker/u8:4-ec]
+   17     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+   27     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+   22     2 root     IW<      0   0%   2   0% [kworker/2:0H-kb]
+   10     2 root     IW       0   0%   3   0% [rcu_preempt]
+12073     2 root     IW       0   0%   2   0% [kworker/u8:5-wm]
+ 1838     2 root     IW       0   0%   0   0% [kworker/u8:3-ec]
+ 1030     2 root     IW       0   0%   1   0% [kworker/1:2-eve]
+   82     2 root     IW<      0   0%   0   0% [kworker/0:1H-ev]
+ 1089     2 root     SW       0   0%   2   0% [kworker/u8:6+ev]
+  284     2 root     IW       0   0%   3   0% [kworker/u8:2-wm]
+   76     2 root     IW       0   0%   2   0% [kworker/u8:1-ec]
+   71     2 root     IW       0   0%   2   0% [kworker/2:1-pm]
+   88     2 root     IW       0   0%   1   0% [kworker/1:1-ipv]
+   24     2 root     SW       0   0%   3   0% [migration/3]
+   11     2 root     SW       0   0%   0   0% [migration/0]
+   19     2 root     SW       0   0%   2   0% [migration/2]
+   14     2 root     SW       0   0%   1   0% [migration/1]
+   92     2 root     SW       0   0%   3   0% [ubi_bgt0d]
+  288     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+ 1111     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1114     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_APPS]
+ 1115     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_APPS]
+ 1116     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1117     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1118     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1110     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1112     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1108     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1106     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1105     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1107     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1109     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1113     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1119     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1101     2 root     IW<      0   0%   2   0% [WCNSS_CMD]
+ 1100     2 root     IW<      0   0%   2   0% [WCNSS_DATA]
+ 1102     2 root     IW<      0   0%   2   0% [WCNSS_DCI]
+ 1098     2 root     IW<      0   0%   2   0% [diag_dci_wq]
+ 1096     2 root     IW<      0   0%   2   0% [DIAG_USB_diag]
+ 1095     2 root     IW<      0   0%   2   0% [diag_wq]
+ 1097     2 root     IW<      0   0%   2   0% [diag_cntl_wq]
+ 1099     2 root     IW<      0   0%   2   0% [WCNSS_CNTL]
+ 1103     2 root     IW<      0   0%   2   0% [WCNSS_DCI_CMD]
+ 1028     2 root     SW       0   0%   3   0% [irq/163-soc:gpi]
+ 1027     2 root     SW       0   0%   3   0% [irq/162-soc:gpi]
+ 1029     2 root     SW       0   0%   3   0% [irq/164-soc:gpi]
+ 1024     2 root     SW       0   0%   3   0% [irq/159-soc:gpi]
+ 1021     2 root     IW<      0   0%   2   0% [cfg80211]
+ 1025     2 root     SW       0   0%   3   0% [irq/160-soc:gpi]
+  328     2 root     IW<      0   0%   1   0% [kworker/1:2H-kb]
+  826     2 root     IW<      0   0%   2   0% [bond0]
+ 1026     2 root     SW       0   0%   3   0% [irq/161-soc:gpi]
+ 1094     2 root     IW<      0   0%   2   0% [diag_real_time_]
+ 1104     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1120     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+  283     2 root     IW<      0   0%   0   0% [kworker/0:2H-ev]
+  110     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+  108     2 root     IW<      0   0%   2   0% [kworker/2:2H]
+   97     2 root     IW<      0   0%   1   0% [ata_sff]
+  199     2 root     SW       0   0%   2   0% [ubifs_bgt0_3]
+   93     2 root     IW<      0   0%   2   0% [kworker/2:1H]
+   91     2 root     IW<      0   0%   3   0% [dsa_ordered]
+   90     2 root     IW<      0   0%   2   0% [ipv6_addrconf]
+   95     2 root     IW<      0   0%   3   0% [kworker/3:1H]
+   80     2 root     IW<      0   0%   3   0% [nvme-reset-wq]
+   77     2 root     SW       0   0%   1   0% [hwrng]
+   79     2 root     IW<      0   0%   2   0% [nvme-wq]
+   81     2 root     IW<      0   0%   1   0% [nvme-delete-wq]
+   89     2 root     SW       0   0%   0   0% [irq/109-q6v5 wd]
+ 4389     2 root     IW       0   0%   2   0% [kworker/2:2-eve]
+ 4354     2 root     IW<      0   0%   0   0% [ecm_ppe_ipv6_wo]
+ 4343     2 root     IW<      0   0%   0   0% [ecm_sfe_ipv4_wo]
+ 4355     2 root     IW<      0   0%   0   0% [ecm_sfe_ipv6_wo]
+ 1369     2 root     IW<      0   0%   2   0% [uas]
+ 2928     2 root     IW       0   0%   0   0% [kworker/0:3]
+ 4341     2 root     SW       0   0%   3   0% [ECM_wifi_event]
+ 1198     2 root     IW<      0   0%   2   0% [wq_rtm_newneigh]
+ 1131     2 root     IW<      0   0%   3   0% [diag_dci_MDM_DC]
+ 1128     2 root     IW<      0   0%   3   0% [diag_mhi_MDM_2]
+ 1127     2 root     IW<      0   0%   3   0% [diag_dci_MDM_DC]
+ 1129     2 root     IW<      0   0%   3   0% [DIAG_USB_diag_m]
+ 1125     2 root     IW<      0   0%   3   0% [DIAG_USB_diag_m]
+ 1123     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1122     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+ 1124     2 root     IW<      0   0%   3   0% [diag_mhi_MDM]
+ 1126     2 root     IW<      0   0%   3   0% [diag_mhi_MDM_DC]
+ 1130     2 root     IW<      0   0%   3   0% [diag_mhi_MDM_DC]
+ 1365     2 root     SW<      0   0%   3   0% [krfcommd]
+ 8715     2 root     SW       0   0%   1   0% [ubifs_bgt1_0]
+ 8707     2 root     SW       0   0%   1   0% [ubi_bgt1d]
+10197     2 root     SW       0   0%   2   0% [wlan_logging_th]
+ 9946     2 root     IW<      0   0%   2   0% [kworker/u9:2-hc]
+11560     2 root     SW       0   0%   3   0% [qrtr_rx]
+ 9944     2 root     IW<      0   0%   3   0% [kworker/u9:1-hc]
+ 4342     2 root     IW<      0   0%   3   0% [ecm_ppe_ipv4_wo]
+   96     2 root     IW       0   0%   3   0% [kworker/3:2-pm]
+   69     2 root     IW<      0   0%   0   0% [kworker/u9:0-hc]
+   68     2 root     IW<      0   0%   1   0% [blkcg_punt_bio]
+   70     2 root     SW       0   0%   3   0% [watchdogd]
+   72     2 root     SW       0   0%   3   0% [kswapd0]
+   32     2 root     IW<      0   0%   2   0% [writeback]
+   31     2 root     SW       0   0%   2   0% [oom_reaper]
+   33     2 root     SW       0   0%   3   0% [kcompactd0]
+   29     2 root     SW       0   0%   2   0% [rcu_tasks_kthre]
+   26     2 root     IW       0   0%   3   0% [kworker/3:0-mm_]
+   28     2 root     IW<      0   0%   1   0% [netns]
+   67     2 root     IW<      0   0%   3   0% [kblockd]
+   74     2 root     IW<      0   0%   3   0% [kthrotld]
+   21     2 root     IW       0   0%   2   0% [kworker/2:0-eve]z
+   23     2 root     SW       0   0%   3   0% [cpuhp/3]
+   16     2 root     IW       0   0%   1   0% [kworker/1:0-rcu]
+   18     2 root     SW       0   0%   2   0% [cpuhp/2]
+   13     2 root     SW       0   0%   1   0% [cpuhp/1]
+   12     2 root     SW       0   0%   0   0% [cpuhp/0]
+    7     2 root     SW       0   0%   2   0% [kworker/u8:0+WC]
+    6     2 root     IW<      0   0%   0   0% [kworker/0:0H-ev]
+    8     2 root     IW<      0   0%   0   0% [mm_percpu_wq]
+    4     2 root     IW<      0   0%   0   0% [rcu_par_gp]
+    3     2 root     IW<      0   0%   0   0% [rcu_gp]
+    5     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+   75     2 root     SW       0   0%   0   0% [irq/108-smp2p]
+ 1121     2 root     IW<      0   0%   3   0% [DIAG_RPMSG_DIAG]
+21828     2 root     IW       0   0%   2   0% [kworker/2:3-ipv]
+11657     2 root     IW<      0   0%   3   0% [kworker/3:3H]
+24805     2 root     IW       0   0%   1   0% [kworker/1:3-rcu]
+
+==================================================
+=                    DeviceDB                    =
+==================================================
+
+
+[[ PROCESS devicedb ]]
+----------------------
+ 8995 root      3980 S    /usr/sbin/devicedb --daemon --udspath /tmp/devicedb/
+
+
+[[ PROCESS ddd ]]
+-----------------
+ 6481 root      1296 S    {service_ddd_ipv} /bin/sh /etc/init.d/service_ddd_ip
+11611 root      3924 S    /usr/sbin/ddd_ethernet_agent -d
+27987 root      3788 S    /usr/sbin/ddd_arp_agent -d -f -m 96:05:e1:99:a7:07,7
+
+
+[[ DATABASE Client Request ]]
+-----------------------------
+devicedb_client succeeded ( rc=0 ).
+
+
+[[ SYSEVENT ]]
+--------------
+devicedb-status started
+WIFI::link_status_changed up,74:12:13:21:53:8A,ath10,26:8a:67:c4:5c:c7,5G,11BEA_EHT80,1201M,-41,false
+ETH::link_status_changed down,52:c8:7d:54:77:27,eth1,24:f5:a2:f2:06:03,3
+ddd_device_online br-lan,26:8a:67:c4:5c:c7,192.168.1.130,
+
+
+[[ wlan_report ]]
+-----------------
+      Client       Stat  Net      Node     MCS  RSSI           When
+-----------------  ----  ----  ----------  ---  ----  -----------------------
+26:8a:67:c4:5c:c7  up    WLAN  master      648M  -41  2025-11-10T19:33:20Z
+7a:12:13:21:53:84  up    WLAN  master      648M  -21  2025-11-10T19:30:23Z
+ce:ef:ac:75:44:5a  up    WLAN  master      520M  -32  2025-11-10T19:31:05Z
+
+
+[[ sqlite errors ]]
+-------------------
+No errors found in log
+
+
+[[ DATABASE DEVICEDB ]]
+-----------------------
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE db_info(
+    schemaVersion        INTEGER NOT NULL,
+    transientFile        TEXT);
+INSERT INTO db_info VALUES(3,'/tmp/devicedb/transient.db');
+CREATE TABLE revision(
+    lastChangedRevision  INTEGER NOT NULL,
+    backupNeeded         BOOLEAN NOT NULL CHECK((backupNeeded > -1) AND (backupNeeded < 2)));
+INSERT INTO revision VALUES(1,0);
+CREATE TABLE device(
+    deviceNo             INTEGER PRIMARY KEY AUTOINCREMENT,
+    deviceId             TEXT UNIQUE NOT NULL,
+    lastChangedRevision  INTEGER NOT NULL,
+    guestNet             BOOLEAN CHECK((guestNet > -1) AND (guestNet < 2)),
+    isAuthority          INTEGER,
+    isAuthority_conf     INTEGER,
+    deviceType           TEXT,
+    deviceType_conf      INTEGER,
+    manufacturer         TEXT,
+    manufacturer_conf    INTEGER,
+    modelNumber          TEXT,
+    modelNumber_conf     INTEGER,
+    serialNumber         TEXT,
+    serialNumber_conf    INTEGER,
+    firmwareDate         TEXT,
+    firmwareDate_conf    INTEGER,
+    firmwareVersion      TEXT,
+    firmwareVersion_conf INTEGER,
+    hardwareVersion      TEXT,
+    hardwareVersion_conf INTEGER,
+    description          TEXT,
+    description_conf     INTEGER,
+    operatingSystem      TEXT,
+    operatingSystem_conf INTEGER,
+    hostName             TEXT,
+    hostName_conf        INTEGER,
+    friendlyName         TEXT,
+    friendlyName_conf    INTEGER,
+    lastSeenOnline       INTEGER,
+    detectedOnNetwork    TEXT);
+INSERT INTO device VALUES(1,'DB614F28-3BB5-48A2-9F65-741213215388',0,NULL,1,1000000,'Infrastructure',1000000,'Linksys',1000000,'M60-US',1000000,'67A10M23F00003',1000000,'1762796491',1000000,'1.0.10.25111009',1000000,'1',1000000,'Linksys PINNACLE 2.0',1000000,NULL,NULL,NULL,NULL,'Linksys00003',1000000,1762802985,NULL);
+INSERT INTO device VALUES(2,'DFCEAEB3-1F0C-4390-93A8-AE01291CCA29',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'jianrong-OptiPlex-7080',2048,NULL,NULL,1762803081,NULL);
+INSERT INTO device VALUES(3,'035FA9DE-E1A4-46F0-993D-9753509E5B1C',0,NULL,NULL,NULL,'Computer',64,'Intel Corporate',2048,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Windows 10',64,'DESKTOP-Q47VE0J',2048,'DESKTOP-Q47VE0J',64,1762470360,'main');
+INSERT INTO device VALUES(5,'CF77987D-55B8-4EDF-A761-741213215382',0,NULL,NULL,NULL,'Infrastructure',100000,'Linksys',100000,'M60-US',100000,'67A10M23F00002',100000,'1762011131',32768,'1.0.10.25111009',100000,'1',32768,'Linksys PINNACLE 2.0',100000,NULL,NULL,'Linksys00002',2048,'Linksys00002',100000,1762803165,NULL);
+INSERT INTO device VALUES(7,'7B378F04-9FB1-4BB9-B85D-07C3BE91C4F4',0,NULL,NULL,NULL,'Phone',32,'Apple Inc.',32,'iPhone',32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'iOS',32,'4dc3ee11-043e-4c38-9a1c-7531112e0a2b',2048,NULL,NULL,1762803209,NULL);
+INSERT INTO device VALUES(8,'0F317275-91AA-4B7F-A4EC-0336AF660D0F',0,NULL,NULL,NULL,'Computer',2048,'Apple Inc.',2048,'MacBook Pro',2048,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'macOS',2048,'jianrongdeMacBook-Pro',2048,'jianrongçš„MacBook Pro',2048,1762803185,NULL);
+INSERT INTO device VALUES(9,'9A46F362-64F3-4AFD-AB75-B3B501F7DD80',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'6f2578a3-6bb0-4f0b-a151-f7533e7beaaa',2048,NULL,NULL,1762511209,NULL);
+INSERT INTO device VALUES(10,'90F0DAE7-D14E-4A21-941B-08D37ADC0451',0,NULL,NULL,NULL,'Computer',2048,'Apple Inc.',2048,'MacBook',2048,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'macOS',2048,'jianrongs-MacBook',2048,NULL,NULL,1762470360,NULL);
+CREATE TABLE property(
+    name                 TEXT NOT NULL,
+    value                TEXT NOT NULL,
+    deviceNo             INTEGER NOT NULL REFERENCES device(deviceNo));
+CREATE TABLE alias(
+    alias                TEXT NOT NULL,
+    deviceNo             INTEGER NOT NULL REFERENCES device(deviceNo));
+INSERT INTO alias VALUES('67A10M23F00003',1);
+INSERT INTO alias VALUES('DESKTOP-Q47VE0J',3);
+INSERT INTO alias VALUES('Linksys00002',5);
+INSERT INTO alias VALUES('uuid:cf77987d-55b8-4edf-a761-741213215382',5);
+INSERT INTO alias VALUES('iPhone',7);
+INSERT INTO alias VALUES('MacBookPro',8);
+INSERT INTO alias VALUES('jianrongçš„MacBook Pro',8);
+INSERT INTO alias VALUES('jianronsMacBook',10);
+CREATE TABLE interface(
+    interfaceNo          INTEGER PRIMARY KEY AUTOINCREMENT,
+    macAddr              TEXT UNIQUE NOT NULL COLLATE NOCASE,
+    interfaceType        TEXT,
+    guestNet             BOOLEAN CHECK((guestNet > -1) AND (guestNet < 2)),
+    connectionOnline     BOOLEAN CHECK((connectionOnline > -1) AND (connectionOnline < 2)),
+    detectedByDriver     BOOLEAN CHECK((detectedByDriver > -1) AND (detectedByDriver < 2)),
+    mu_mimo              BOOLEAN CHECK((mu_mimo > -1) AND (mu_mimo < 2)),
+    wifiBand             TEXT,
+    connectionType       TEXT,
+    ethernetPort         INTEGER,
+    parentDeviceId       TEXT,
+    remote               BOOLEAN CHECK((remote="") OR ((remote > -1) AND (remote < 2))),
+    ap_bssid             TEXT COLLATE NOCASE,
+    deviceNo             INTEGER NOT NULL REFERENCES device(deviceNo));
+INSERT INTO interface VALUES(1,'BE:67:62:FB:D1:F3','wired',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1);
+INSERT INTO interface VALUES(2,'74:12:13:21:53:88',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1);
+INSERT INTO interface VALUES(3,'24:f5:a2:f2:06:03','wired',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2);
+INSERT INTO interface VALUES(4,'e4:70:b8:6c:dc:de','wireless',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,3);
+INSERT INTO interface VALUES(5,'7a:12:13:21:53:84','wireless',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5);
+INSERT INTO interface VALUES(6,'74:12:13:21:53:82',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5);
+INSERT INTO interface VALUES(7,'74:12:13:21:53:83',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5);
+INSERT INTO interface VALUES(8,'26:8a:67:c4:5c:c7','wireless',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,7);
+INSERT INTO interface VALUES(9,'ce:ef:ac:75:44:5a','wireless',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,8);
+INSERT INTO interface VALUES(10,'CA:2F:B9:2A:A4:B2','wired',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1);
+INSERT INTO interface VALUES(11,'7e:12:13:21:53:83',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,5);
+INSERT INTO interface VALUES(12,'f2:ad:c8:00:c2:53','wireless',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,9);
+INSERT INTO interface VALUES(13,'FA:31:4B:00:C0:2C','wired',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1);
+INSERT INTO interface VALUES(14,'f4:0f:24:3a:d5:34','wireless',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,10);
+INSERT INTO interface VALUES(15,'22:2E:53:3E:1A:86','wired',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1);
+INSERT INTO interface VALUES(16,'76:9E:36:4D:01:1B','wired',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1);
+INSERT INTO interface VALUES(17,'06:D6:BB:5A:5E:9F','wired',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1);
+INSERT INTO interface VALUES(18,'52:C8:7D:54:77:27','wired',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1);
+CREATE TABLE ipaddr(
+    ip                   TEXT NOT NULL,
+    type                 TEXT NOT NULL,
+    interfaceNo          INTEGER NOT NULL REFERENCES interface(interfaceNo));
+CREATE TABLE ethernet(
+    port                 INTEGER UNIQUE NOT NULL,
+    linkUp               BOOLEAN CHECK((linkup > -1) AND (linkup < 2)),
+    linkSpeed            TEXT);
+CREATE TABLE ethernet_macs(
+    macAddr              TEXT NOT NULL COLLATE NOCASE,
+    port                 INTEGER NOT NULL,
+    linkSpeed            TEXT NOT NULL,
+    parentDeviceId       TEXT NOT NULL,
+    remote               TEXT NOT NULL);
+CREATE TABLE wifi_macs(
+    macAddr              TEXT NOT NULL COLLATE NOCASE);
+CREATE TABLE arp(
+    ip                   TEXT NOT NULL,
+    type                 TEXT NOT NULL,
+    macAddr              TEXT NOT NULL COLLATE NOCASE);
+CREATE TABLE mac_reserve(
+    macAddr              TEXT NOT NULL COLLATE NOCASE,
+    deviceNo             INTEGER NOT NULL REFERENCES device(deviceNo));
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:88',1);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:89',1);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:8a',1);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:8b',1);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:8c',1);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:8d',1);
+INSERT INTO mac_reserve VALUES('00:00:00:00:00:00',1);
+INSERT INTO mac_reserve VALUES('be:67:62:fb:d1:f3',1);
+INSERT INTO mac_reserve VALUES('7a:12:13:21:53:89',1);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:82',5);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:83',5);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:84',5);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:85',5);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:86',5);
+INSERT INTO mac_reserve VALUES('74:12:13:21:53:87',5);
+INSERT INTO mac_reserve VALUES('7a:12:13:21:53:84',5);
+INSERT INTO mac_reserve VALUES('00:03:7f:ba:db:ad',5);
+INSERT INTO mac_reserve VALUES('7a:12:13:21:53:83',5);
+INSERT INTO mac_reserve VALUES('1a:17:6a:5b:e2:05',5);
+INSERT INTO mac_reserve VALUES('00:00:00:00:00:00',5);
+INSERT INTO mac_reserve VALUES('7e:12:13:21:53:84',5);
+INSERT INTO mac_reserve VALUES('82:12:13:21:53:83',5);
+INSERT INTO mac_reserve VALUES('7e:12:13:21:53:83',5);
+INSERT INTO mac_reserve VALUES('ca:2f:b9:2a:a4:b2',1);
+INSERT INTO mac_reserve VALUES('aa:f9:9b:83:2e:23',5);
+INSERT INTO mac_reserve VALUES('fa:31:4b:00:c0:2c',1);
+INSERT INTO mac_reserve VALUES('8e:79:3b:9d:52:36',5);
+INSERT INTO mac_reserve VALUES('22:2e:53:3e:1a:86',1);
+INSERT INTO mac_reserve VALUES('32:23:f8:6b:b8:3b',5);
+INSERT INTO mac_reserve VALUES('76:9e:36:4d:01:1b',1);
+INSERT INTO mac_reserve VALUES('1a:dc:9b:fa:b9:a5',5);
+INSERT INTO mac_reserve VALUES('06:d6:bb:5a:5e:9f',1);
+INSERT INTO mac_reserve VALUES('76:49:4b:59:5a:0c',5);
+INSERT INTO mac_reserve VALUES('52:c8:7d:54:77:27',1);
+INSERT INTO mac_reserve VALUES('96:05:e1:99:a7:07',5);
+CREATE TABLE deleted(
+    deviceId             TEXT UNIQUE NOT NULL,
+    lastChangedRevision  INTEGER NOT NULL);
+CREATE TABLE transient_table(
+    tableName            TEXT NOT NULL);
+INSERT INTO transient_table VALUES('ipaddr');
+INSERT INTO transient_table VALUES('ethernet');
+INSERT INTO transient_table VALUES('ethernet_macs');
+INSERT INTO transient_table VALUES('wifi_macs');
+INSERT INTO transient_table VALUES('arp');
+INSERT INTO transient_table VALUES('deleted');
+CREATE TABLE transient_attr(
+    tableName            TEXT NOT NULL,
+    attrName             TEXT NOT NULL,
+    defaultValue         TEXT);
+INSERT INTO transient_attr VALUES('revision','lastChangedRevision','1');
+INSERT INTO transient_attr VALUES('revision','backupNeeded','0');
+INSERT INTO transient_attr VALUES('device','lastChangedRevision','0');
+INSERT INTO transient_attr VALUES('interface','guestNet',NULL);
+INSERT INTO transient_attr VALUES('interface','connectionOnline',NULL);
+INSERT INTO transient_attr VALUES('interface','detectedByDriver',NULL);
+INSERT INTO transient_attr VALUES('interface','mu_mimo',NULL);
+INSERT INTO transient_attr VALUES('interface','wifiBand',NULL);
+INSERT INTO transient_attr VALUES('interface','connectionType',NULL);
+INSERT INTO transient_attr VALUES('interface','ethernetPort',NULL);
+INSERT INTO transient_attr VALUES('interface','parentDeviceId',NULL);
+INSERT INTO transient_attr VALUES('interface','remote',NULL);
+INSERT INTO transient_attr VALUES('interface','ap_bssid',NULL);
+CREATE TABLE infrastructure(
+    infrastructure       BOOLEAN NOT NULL,
+    infrastructureType   TEXT,
+    deviceNo             INTEGER NOT NULL REFERENCES device(deviceNo));
+INSERT INTO infrastructure VALUES(1,'master',1);
+INSERT INTO infrastructure VALUES(1,'slave',5);
+DELETE FROM sqlite_sequence;
+INSERT INTO sqlite_sequence VALUES('device',10);
+INSERT INTO sqlite_sequence VALUES('interface',18);
+COMMIT;
+
+
+[[ DATABASE TRANSIENT ]]
+------------------------
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE t_revision(
+    lastChangedRevision  INTEGER NOT NULL,
+    backupNeeded         BOOLEAN NOT NULL CHECK((backupNeeded > -1) AND (backupNeeded < 2)));
+INSERT INTO t_revision VALUES(68,1);
+CREATE TABLE t_device(
+    lastChangedRevision  INTEGER NOT NULL,
+    deviceNo             INTEGER NOT NULL);
+INSERT INTO t_device VALUES(0,3);
+INSERT INTO t_device VALUES(63,8);
+INSERT INTO t_device VALUES(68,7);
+INSERT INTO t_device VALUES(0,10);
+INSERT INTO t_device VALUES(0,9);
+INSERT INTO t_device VALUES(66,5);
+INSERT INTO t_device VALUES(26,1);
+INSERT INTO t_device VALUES(64,2);
+CREATE TABLE t_interface(
+    guestNet             BOOLEAN CHECK((guestNet > -1) AND (guestNet < 2)),
+    connectionOnline     BOOLEAN CHECK((connectionOnline > -1) AND (connectionOnline < 2)),
+    detectedByDriver     BOOLEAN CHECK((detectedByDriver > -1) AND (detectedByDriver < 2)),
+    mu_mimo              BOOLEAN CHECK((mu_mimo > -1) AND (mu_mimo < 2)),
+    wifiBand             TEXT,
+    connectionType       TEXT,
+    ethernetPort         INTEGER,
+    parentDeviceId       TEXT,
+    ap_bssid             TEXT COLLATE NOCASE,
+    ap_intf              TEXT,
+    remote               BOOLEAN CHECK((remote > -1) AND (remote < 2)),
+    l2hw                 INTEGER CHECK((l2hw > -1) AND (l2hw < 3)),
+    interfaceNo          INTEGER NOT NULL);
+INSERT INTO t_interface VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17);
+INSERT INTO t_interface VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,15);
+INSERT INTO t_interface VALUES(NULL,0,0,NULL,NULL,NULL,3,'DB614F28-3BB5-48A2-9F65-741213215388',NULL,NULL,0,1,3);
+INSERT INTO t_interface VALUES(0,1,1,NULL,'5G','11BEA_EHT85G',NULL,'DB614F28-3BB5-48A2-9F65-741213215388','74:12:13:21:53:8A','ath10',0,2,8);
+INSERT INTO t_interface VALUES(NULL,1,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,6);
+INSERT INTO t_interface VALUES(NULL,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,7);
+INSERT INTO t_interface VALUES(NULL,1,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2);
+INSERT INTO t_interface VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,16);
+INSERT INTO t_interface VALUES(0,0,1,NULL,'5G','11BEA_EHT85G',NULL,'DB614F28-3BB5-48A2-9F65-741213215388','74:12:13:21:53:8A','ath10',0,2,5);
+INSERT INTO t_interface VALUES(0,0,0,NULL,'2.4G','11BEG_EHT22.4G',NULL,'DB614F28-3BB5-48A2-9F65-741213215388','7A:12:13:21:53:89','ath7',0,NULL,11);
+INSERT INTO t_interface VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1);
+INSERT INTO t_interface VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,10);
+INSERT INTO t_interface VALUES(0,1,1,NULL,'5G','11AC_VHT805G',NULL,'DB614F28-3BB5-48A2-9F65-741213215388','74:12:13:21:53:8A','ath10',0,2,9);
+INSERT INTO t_interface VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,4);
+INSERT INTO t_interface VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,12);
+INSERT INTO t_interface VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,14);
+INSERT INTO t_interface VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,13);
+INSERT INTO t_interface VALUES(NULL,1,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,18);
+CREATE TABLE t_ipaddr(
+    ip                   TEXT NOT NULL COLLATE NOCASE,
+    type                 TEXT NOT NULL,
+    interfaceNo          INTEGER NOT NULL);
+INSERT INTO t_ipaddr VALUES('192.168.1.1','ipv4',2);
+INSERT INTO t_ipaddr VALUES('192.168.1.1','ipv4',18);
+INSERT INTO t_ipaddr VALUES('192.168.1.213','ipv4',6);
+INSERT INTO t_ipaddr VALUES('192.168.1.190','ipv4',9);
+INSERT INTO t_ipaddr VALUES('192.168.1.254','ipv4',3);
+INSERT INTO t_ipaddr VALUES('fe80:0000:0000:0000:0c37:51b5:1fe7:2295','ipv6',9);
+INSERT INTO t_ipaddr VALUES('fe80:0000:0000:0000:a50e:5604:4ccf:347b','ipv6',3);
+INSERT INTO t_ipaddr VALUES('fe80:0000:0000:0000:7612:13ff:fe21:5382','ipv6',6);
+INSERT INTO t_ipaddr VALUES('192.168.1.130','ipv4',8);
+CREATE TABLE t_ethernet_ports(
+    port                 INTEGER UNIQUE NOT NULL,
+    linkUp               BOOLEAN CHECK((linkup > -1) AND (linkup < 2)),
+    linkSpeed            TEXT);
+INSERT INTO t_ethernet_ports VALUES(4,1,'1000');
+INSERT INTO t_ethernet_ports VALUES(1,0,NULL);
+INSERT INTO t_ethernet_ports VALUES(2,0,NULL);
+INSERT INTO t_ethernet_ports VALUES(3,0,NULL);
+CREATE TABLE t_ethernet_macs(
+    macAddr              TEXT NOT NULL COLLATE NOCASE,
+    port                 INTEGER NOT NULL,
+    linkSpeed            TEXT NOT NULL,
+    parentDeviceId       TEXT NOT NULL,
+    remote               BOOLEAN NOT NULL CHECK((remote > -1) AND (remote < 2)));
+CREATE TABLE t_wifi_macs(
+    macAddr              TEXT NOT NULL COLLATE NOCASE,
+    guestNet             BOOLEAN CHECK((guestNet > -1) AND (guestNet < 2)),
+    mu_mimo              BOOLEAN CHECK((mu_mimo > -1) AND (mu_mimo < 2)),
+    wifiBand             TEXT,
+    connectionType       TEXT,
+    parentDeviceId       TEXT,
+    ap_bssid             TEXT COLLATE NOCASE,
+    ap_intf              TEXT,
+    remote               BOOLEAN NOT NULL CHECK((remote > -1) AND (remote < 2)));
+INSERT INTO t_wifi_macs VALUES('7a:12:13:21:53:84',0,NULL,'5G','11BEA_EHT85G','DB614F28-3BB5-48A2-9F65-741213215388','74:12:13:21:53:8A','ath10',0);
+INSERT INTO t_wifi_macs VALUES('ce:ef:ac:75:44:5a',0,NULL,'5G','11AC_VHT805G','DB614F28-3BB5-48A2-9F65-741213215388','74:12:13:21:53:8A','ath10',0);
+INSERT INTO t_wifi_macs VALUES('26:8a:67:c4:5c:c7',0,NULL,'5G','11BEA_EHT85G','DB614F28-3BB5-48A2-9F65-741213215388','74:12:13:21:53:8A','ath10',0);
+CREATE TABLE t_arp_macs(
+    ip                   TEXT NOT NULL,
+    type                 TEXT NOT NULL,
+    state                INTEGER NOT NULL CHECK((state > -1) AND (state < 3)),
+    intf                 TEXT NOT NULL,
+    probeState           INTEGER CHECK((probeState > -1) AND (probeState < 4)),
+    macAddr              TEXT NOT NULL COLLATE NOCASE);
+INSERT INTO t_arp_macs VALUES('192.168.1.190','ipv4',1,'br-lan',NULL,'ce:ef:ac:75:44:5a');
+INSERT INTO t_arp_macs VALUES('192.168.1.254','ipv4',2,'br-lan',NULL,'24:f5:a2:f2:06:03');
+INSERT INTO t_arp_macs VALUES('192.168.1.213','ipv4',1,'br-lan',NULL,'74:12:13:21:53:82');
+INSERT INTO t_arp_macs VALUES('192.168.1.130','ipv4',1,'br-lan',NULL,'26:8a:67:c4:5c:c7');
+CREATE TABLE t_infra_macs(
+    ip                   TEXT NOT NULL,
+    type                 TEXT NOT NULL,
+    connectionOnline     BOOLEAN CHECK((connectionOnline > -1) AND (connectionOnline < 2)),
+    macAddr              TEXT NOT NULL COLLATE NOCASE);
+INSERT INTO t_infra_macs VALUES('192.168.1.1','ipv4',1,'74:12:13:21:53:88');
+INSERT INTO t_infra_macs VALUES('192.168.1.213','ipv4',1,'74:12:13:21:53:82');
+CREATE TABLE t_ipclient_macs(
+    ip                   TEXT NOT NULL,
+    type                 TEXT NOT NULL,
+    lastSeenOnline       INTEGER NOT NULL,
+    macAddr              TEXT NOT NULL COLLATE NOCASE);
+CREATE TABLE t_deleted(
+    deviceId             TEXT UNIQUE NOT NULL,
+    lastChangedRevision  INTEGER NOT NULL);
+COMMIT;
+
+
+==================================================
+=                 DeviceDB - END                 =
+==================================================
+
+
+---- Linksys uci settings-----
+linksys.device=linksys
+linksys.device.configured='0'
+linksys.device.hardware_vendor_name='QCA'
+linksys.device.dot_local_hostname='myrouter'
+linksys.device.dot_local_domain='local'
+linksys.device.http_admin_port='80'
+linksys.device.num_macs='6'
+linksys.device.product='pinnacle'
+linksys.device.fastpath_support='1'
+linksys.device.nat_enabled='1'
+linksys.device.hostname='Linksys00003'
+linksys.device.bt_mac_addr='74:12:13:21:53:88'
+linksys.device.fastpath_enable='1'
+linksys.info=linksys
+linksys.info.hardware_vendor_name='QCA'
+linksys.info.dhcp_wins_server='0.0.0.0'
+linksys.info.dhcp_nameserver_1='0.0.0.0'
+linksys.info.dhcp_nameserver_2='0.0.0.0'
+linksys.info.dhcp_nameserver_3='0.0.0.0'
+linksys.info.dhcp_num_static_hosts='0'
+linksys.info.modelNumber='M60-US'
+linksys.network=linksys
+linksys.network.wan_auto_detect_enabled='0'
+linksys.network.bridge_mode='0'
+linksys.network.bridge_debug='0'
+linksys.network.lan_ifname='br-lan'
+linksys.network.lan_ipaddr='192.168.1.1'
+linksys.network.lan_dns_ipaddr='192.168.1.1'
+linksys.network.lan_netmask='255.255.255.0'
+linksys.network.lan_ethernet_physical_ifnames='eth1'
+linksys.network.wan_physical_ifname='eth0'
+linksys.network.wan_supported_conn_types='dhcp' 'static' 'pppoe' 'pptp' 'l2tp' 'bridge'
+linksys.network.wan_ipv6_supported_conn_types='Automatic' 'PPPoE' 'Pass-through'
+linksys.network.6rd_enabled='0'
+linksys.network.dhcp_option_6rd_enable='1'
+linksys.network.ipv6_bridging_enabled='0'
+linksys.network.ipv6_static_enabled='0'
+linksys.network.ipv6_passthrough_enabled='0'
+linksys.network.ipv6_pppoe_enabled='0'
+linksys.network.ipv6_automatic='1'
+linksys.network.ipv6_enabled='1'
+linksys.network.l2tp_address_static='0'
+linksys.network.pptp_address_static='0'
+linksys.network.pppd_options='lcp-echo-failure 5'
+linksys.network.wan_ppp_method='redial'
+linksys.network.wan_ppp_idle_time='0'
+linksys.network.wan_ppp_keepalive_interval='0'
+linksys.network.vlan_tagging_supported='1'
+linksys.network.vlan_lower_limitation='3'
+linksys.network.vlan_scserver_lower_limitation='5'
+linksys.network.vlan_upper_limitation='4094'
+linksys.network.dhcpv6c_enable='3'
+linksys.network.dhcpv6s_enable='1'
+linksys.network.router_adv_enable='1'
+linksys.network.router_adv_provisioning_enable='1'
+linksys.network.wan_mac_addr='74:12:13:21:53:88'
+linksys.network.lan_mac_addr='74:12:13:21:53:88'
+linksys.network.dhcpv6s_duid='00:02:03:09:05:05:2A:BC:DC:89:F5:64'
+linksys.vlan_tagging=linksys
+linksys.vlan_tagging.enabled='0'
+linksys.vlan_tagging.type='1'
+linksys.vlan_tagging.tagging_state='0'
+linksys.vlan_tagging.vlan_id='0'
+linksys.vlan_tagging.prio='0'
+linksys.backhaul=linksys
+linksys.backhaul.wired='0'
+linksys.backhaul.hide_ssid='1'
+linksys.backhaul.l3_perf_threshold='50'
+linksys.backhaul.24G_enabled='0'
+linksys.smart_connect=linksys
+linksys.smart_connect.wl0_setup_vap='ath6'
+linksys.smart_connect.serverip='192.168.20.1'
+linksys.smart_connect.wl0_configured_vap='ath7'
+linksys.smart_connect.client_enabled='0'
+linksys.smart_connect.br_dev='br-lan'
+linksys.smart_connect.server_enabled='1'
+linksys.smart_connect.configured_vap_ssid_broadcast='0'
+linksys.smart_connect.wl0_enabled='1'
+linksys.smart_connect.wl1_enabled='0'
+linksys.smart_connect.configured_vap_security_mode='wpa2-personal'
+linksys.smart_connect.setup_duration='120'
+linksys.smart_connect.configured_vap_ssid='UojIGtvsjwnpoe3U7X42aQiMIbNEDQzx'
+linksys.smart_connect.configured_vap_passphrase='2eBNeiu79GmDS3X9YHu0gLhBHFqG3UR2ZTxb5HY14cWFJgMo52iZ1MrgakeGa7K'
+linksys.smart_connect.setup_vap_ssid='Linksys00003-SCS'
+linksys.smart_connect.client_pin='9889'
+linksys.subscriber=linksys
+linksys.subscriber.subs='/var/config/subscriber.subs'
+linksys.subscriber.keepalive='60'
+linksys.subscriber.enabled='1'
+linksys.subscriber.file_prefix='/tmp/msg'
+linksys.subscriber.connect_timeout='10'
+linksys.omsg=linksys
+linksys.omsg.psk_id='omsg'
+linksys.omsg.port='1883'
+linksys.omsg.secport='8883'
+linksys.omsg.master_issue_periodic_bh_speed_check='1'
+linksys.omsg.psk='3265424e6569753739476d445333583959487530674c684248467147335552325a54786235485931346357464a674d6f3532695a314d7267616b654761374b'
+linksys.mosquitto=linksys
+linksys.mosquitto.enabled='1'
+linksys.mosquitto.debug='0'
+linksys.mosquitto.psk_id='omsg'
+linksys.mosquitto.port='1883'
+linksys.mosquitto.secport='8883'
+linksys.mosquitto.psk='3265424e6569753739476d445333583959487530674c684248467147335552325a54786235485931346357464a674d6f3532695a314d7267616b654761374b'
+linksys.thrulay=linksys
+linksys.thrulay.log='/tmp/.thrulay.log'
+linksys.thrulay.enabled='1'
+linksys.thrulay.test_duration='3'
+linksys.thrulay.serverip='192.168.1.1'
+linksys.thrulay.host_list='/tmp/.thrulay.hosts'
+linksys.thrulay.min_bad_seq_len='3'
+linksys.thrulay.port='5003'
+linksys.thrulay.low_drops='2'
+linksys.fwup=linksys
+linksys.fwup.server_uri='https://update1-stage.linksys.com'
+linksys.fwup.dev_server_uri='https://update1-stage.linksys.com'
+linksys.fwup.autoupdate_flags='2'
+linksys.fwup.checklimit='14400'
+linksys.fwup.periodic_checktime='0'
+linksys.fwup.lastsuccess_checktime='1762802992'
+linksys.fwup.version_compare='0'
+linksys.fwup.cleanup_wait_time='8'
+linksys.fwup.firmware_version='1.0.10.25111009'
+linksys.fwup.firmware_date='1762825291'
+linksys.fwup.boot_part='2'
+linksys.fwup.newfirmware_date='0'
+linksys.fwup.end_timewindow='0'
+linksys.fwup.start_timewindow='0'
+linksys.devicedb=linksys
+linksys.devicedb.udspath='/tmp/devicedb/server_link'
+linksys.devicedb.dbfile='/tmp/devicedb/devicedb.db'
+linksys.devicedb.dbbackup='/var/config/devicedb/devicedb.db'
+linksys.devicedb.dbtransientfile='/tmp/devicedb/transient.db'
+linksys.lldpd=linksys
+linksys.lldpd.debug='0'
+linksys.lldpd.enabled='1'
+linksys.secure_config=linksys
+linksys.secure_config.enabled='1'
+linksys.secure_config.debug='0'
+linksys.secure_config.username='user'
+linksys.secure_config.password='password'
+linksys.secure_config.port='6060'
+linksys.secure_config.config_file='/etc/secure_config.conf'
+linksys.secure_config.smart_backup_enable_purge='1'
+linksys.secure_config.backup_preseed_config='0'
+linksys.secure_config.backup_use_master='0'
